@@ -12,3 +12,8 @@ export function IFill(locator, text)
 {
     cy.get(locator).type(text);
 }
+
+export function IMouseHover(locator)
+{
+    cy.hover(locator);
+}
