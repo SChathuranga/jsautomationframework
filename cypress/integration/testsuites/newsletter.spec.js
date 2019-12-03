@@ -9,6 +9,7 @@ context('NewsletterCB', () => {
     it('LoginAsB2B', () => {
         var baseUrl='https://automation9352.azurewebsites.net'
         IOpen(baseUrl)
+        cy.pause()
         IFill('#UserName', 'b2b@sana-commerce.com')
         IFill('#Password', 'abcABC@123')
         IClick('.row-actions > .btn')
