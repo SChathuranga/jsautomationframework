@@ -1,0 +1,17 @@
+{
+    "loginpage":
+    {
+        "email": "#UserName",
+        "password": "#Password",
+        "loginbutton": ".row-actions > .btn"
+    },
+
+    "homepage":
+    {
+        "accountmenu":
+        {
+            "icon": ".opener",
+            "username": "body > div.site > header > div > div.middle-header > div.top-dropdown.login > div.summary > div.welcome.border-horizontal > span"
+        }
+    }
+}

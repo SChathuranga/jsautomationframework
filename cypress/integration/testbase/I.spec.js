@@ -15,5 +15,10 @@ export function IFill(locator, text)
 
 export function IMouseHover(locator)
 {
-    cy.hover(locator);
+    cy.get(locator).trigger('mouseover')
+}
+
+export function ISeeText(locator, expectedText)
+{
+    cy.get(locator).should('contain', expectedText)
 }
