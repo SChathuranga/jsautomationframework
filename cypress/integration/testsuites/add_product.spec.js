@@ -9,6 +9,7 @@ context('AddProducts', () => {
     it('OpenPage', () => {
         var baseUrl='http://webapp.sana.dev.corp.ism.nl/'
         IOpen(baseUrl)
-        cy.xpath('//a[@class="MainNav_hyp-top-lvl"]/span[contains(text(),"Catalog")]').click()
+        //IClick('.hover > .MainNav_hyp-container > .MainNav_hyp-top-lvl')
+        cy.xpath('//*[@id="mainNavigation"]/ul/li[2]/div/a').click()
     })
 })
