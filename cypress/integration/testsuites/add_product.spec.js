@@ -9,7 +9,8 @@ context('AddProducts', () => {
     it('OpenPage', () => {
         var baseUrl='http://webapp.sana.dev.corp.ism.nl/'
         IOpen(baseUrl)
+        //Click('//*[@id="header"]/div[1]/div/div[2]/div[5]')
         //IClick('.hover > .MainNav_hyp-container > .MainNav_hyp-top-lvl')
-        cy.xpath('//*[@id="mainNavigation"]/ul/li[2]/div/a').click()
+        Click('//*[@id="header"]/div[1]/div/div[2]/div[5]')
     })
 })

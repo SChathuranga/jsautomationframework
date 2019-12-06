@@ -1,11 +1,21 @@
 export function IOpen(url)
 {
     cy.visit(url)
-};
+}
 
 export function IClick(locator)
 {
-    cy.get(locator).click();
+    console.log(locator)
+    console.log('========================== ==============================================')
+    if(locator.includes('//'))
+    {
+        cy.xpath(locator).click();
+    }
+    else
+    {
+        cy.get(locator).click();
+    } 
+    //cy.get(locator).click();
 }
 
 export function IFill(locator, text)
@@ -21,4 +31,23 @@ export function IMouseHover(locator)
 export function ISeeText(locator, expectedText)
 {
     cy.get(locator).should('contain', expectedText)
+}
+
+export function Click(locator)
+{
+    try
+    {
+        cy.xpath(locator).click();
+    }
+    catch(e)
+    {
+        try 
+        {
+            cy.get(locator).click();
+        } 
+        catch (error) 
+        {
+            console.log(error)
+        }
+    }
 }
