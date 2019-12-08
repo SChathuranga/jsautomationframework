@@ -3,14 +3,15 @@
     {
         "email": "#UserName",
         "password": "#Password",
-        "loginbutton": ".row-actions > .btn"
+        "loginbutton": ".row-actions > .btn",
+        "testdata": "testdatavalue"
     },
 
     "homepage":
     {
         "accountmenu":
         {
-            "icon": ".opener",
+            "icon": ".top-dropdown .login-title",
             "username": "body > div.site > header > div > div.middle-header > div.top-dropdown.login > div.summary > div.welcome.border-horizontal > span"
         }
     }

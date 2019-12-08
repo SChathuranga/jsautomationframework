@@ -1,9 +1,8 @@
-import {IClick, IOpen, IFill, IMouseHover, ISeeText} from '../testbase/I.spec'
-import '../pageobjects/loginpage.yml'
+import '../testbase/I.spec'
 const pages = require('../pageobjects/pages.json')
 const testdata = require('../testdata/testdata.json')
+const baseUrl = 'https://www.google.com'
 const I = require('../testbase/I.spec')
-var baseUrl='https://automation9352.azurewebsites.net'
 
 context('NewsletterCB', () => {
     beforeEach(() => {
@@ -16,5 +15,6 @@ context('NewsletterCB', () => {
         I.Click(pages.loginpage.loginbutton)
         I.MouseHover(pages.homepage.accountmenu.icon)
         I.SeeText(pages.homepage.accountmenu.username, testdata.B2BCustomer.username)
+        I.Click(pages.loginpage.testdata)
     })
 })

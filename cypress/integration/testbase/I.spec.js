@@ -3,51 +3,34 @@ export function IOpen(url)
     cy.visit(url)
 }
 
-export function IClick(locator)
-{
-    console.log(locator)
-    console.log('========================== ==============================================')
-    if(locator.includes('//'))
-    {
-        cy.xpath(locator).click();
-    }
-    else
-    {
-        cy.get(locator).click();
-    } 
-    //cy.get(locator).click();
-}
-
-export function IFill(locator, text)
-{
-    cy.get(locator).type(text);
-}
-
-export function IMouseHover(locator)
-{
-    cy.get(locator).trigger('mouseover')
-}
-
-export function ISeeText(locator, expectedText)
-{
-    cy.get(locator).should('contain', expectedText)
-}
-
 export function Click(locator)
 {
-    try
-    {
+    if(locator.includes('//'))
         cy.xpath(locator).click();
-    }
-    catch(e)
-    {
-        try 
-        {
-            cy.get(locator).click();
-        } 
-        catch (error) 
-        {
-            console.log(error)
-        }
-    }
+    else
+        cy.get(locator).click();
+}
+
+export function Fill(locator, text)
+{
+    if(locator.includes('//'))
+        cy.xpath(locator).type(text);
+    else
+        cy.get(locator).type(text);
+}
+
+export function MouseHover(locator)
+{
+    if(locator.includes('//'))
+        cy.xpath(locator).trigger('mouseover')
+    else
+        cy.get(locator).trigger('mouseover')
+}
+
+export function SeeText(locator, expectedText)
+{
+    if(locator.includes('//'))
+        cy.xpath(locator).should('contain', expectedText)
+    else
+        cy.get(locator).should('contain', expectedText)
 }
