@@ -1,6 +1,7 @@
 {
     "viewportWidth": 1920,
     "viewportHeight": 1280,
+    "reporter": "mochawesome",
 
-    "reporter": "mochawesome"
+    "baseUrl": "https://automation9352.azurewebsites.net"
   }
