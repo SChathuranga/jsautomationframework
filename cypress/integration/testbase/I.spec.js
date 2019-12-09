@@ -1,6 +1,9 @@
 export function IOpen(url)
 {
-    cy.visit(url)
+    if(url.includes("https://"))
+        cy.visit(url)
+    else
+        cy.visit(Cypress.config().baseUrl + url)
 }
 
 export function Click(locator)

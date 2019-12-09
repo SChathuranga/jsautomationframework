@@ -1,6 +1,7 @@
 {
     "loginpage":
     {
+        "url": "/login",
         "email": "#UserName",
         "password": "#Password",
         "loginbutton": ".row-actions > .btn",
