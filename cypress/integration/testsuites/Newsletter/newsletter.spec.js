@@ -1,6 +1,7 @@
 const pages = require('../../pageobjects/pages.json')
 const testdata = require('../../testdata/testdata.json')
 const I = require('../../testbase/I.spec')
+import '../../pageobjects'
 var baseUrl='https://automation9352.azurewebsites.net'
 
 context('NewsletterCB', () => {
@@ -14,5 +15,6 @@ context('NewsletterCB', () => {
         I.Click(pages.loginpage.loginbutton)
         I.MouseHover(pages.homepage.accountmenu.icon)
         I.SeeText(pages.homepage.accountmenu.username, testdata.B2BCustomer.username)
+        
     })
 })
