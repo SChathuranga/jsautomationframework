@@ -1,7 +1,6 @@
 const pages = require('../../pageobjects/pages.json')
 const testdata = require('../../testdata/testdata.json')
 const I = require('../../testbase/I.spec')
-import '../../pageobjects'
 var baseUrl='https://automation9352.azurewebsites.net'
 
 context('NewsletterCB', () => {
@@ -10,6 +9,7 @@ context('NewsletterCB', () => {
       })
 
     it('LoginAsB2B Customer', () => {
+        I.Click(pages.homepage.login)
         I.Fill(pages.loginpage.email, testdata.B2BCustomer.email)
         I.Fill(pages.loginpage.password, testdata.B2BCustomer.password)
         I.Click(pages.loginpage.loginbutton)

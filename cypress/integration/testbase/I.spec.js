@@ -54,18 +54,18 @@ export function Rightclick(locator)
         cy.get(locator).rightclick()
 }
 
-export function Check(locator, expectedText)
+export function Check(locator, option)
 {
     if(locator.includes('//'))
-        cy.get(locator).check(expectedText)
+        cy.get(locator).check(option)
     else
-        cy.get(locator).check(expectedText)
+        cy.get(locator).check(option)
 }
 
-export function Check(locator, expectedText)
+export function Select(locator, option)
 {
     if(locator.includes('//'))
-        cy.get(locator).select(expectedText)
+        cy.get(locator).select(option)
     else
-        cy.get(locator).select(expectedText)
+        cy.get(locator).select(option)
 }
