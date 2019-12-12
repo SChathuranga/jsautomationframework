@@ -1,0 +1,21 @@
+{
+    "LoginPage":
+    {
+        "Url": "/login",
+        "Email": "#UserName",
+        "Password": "#Password",
+        "LoginButton": ".row-actions > .btn",
+        "Testdata": "testdatavalue"
+    },
+
+    "HomePage":
+    {
+        "AccountMenu":
+        {
+            "Icon": ".top-dropdown .login-title",
+            "Username": "body > div.site > header > div > div.middle-header > div.top-dropdown.login > div.summary > div.welcome.border-horizontal > span"
+        },
+
+        "Login": "body > div.site > header > div > div.top-header > div.top-action > a:nth-child(3)"
+    }
+}
