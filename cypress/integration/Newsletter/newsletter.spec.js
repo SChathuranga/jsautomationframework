@@ -1,6 +1,6 @@
 const Pages = require('../../pageobjects/pages.json')
 const Testdata = require('../../testdata/testdata.json')
-const I = require('../../testbase/I.spec')
+const I = require('../../testbase/testbase')
 var baseUrl='https://automation9352.azurewebsites.net'
 
 context('NewsletterCB', () => {
