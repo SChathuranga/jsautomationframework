@@ -15,6 +15,6 @@
     "mochawesome": "^4.1.0"
   },
   "dependencies": {
-    "npm": "^6.13.1"
+    "npm": "^6.13.4"
   }
 }
