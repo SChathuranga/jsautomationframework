@@ -1,0 +1,897 @@
+{
+  "InPageNavigation": {
+    "FlexiPageUrl": "InPageNavigation",
+    "FlexiPageTitle": "InPageNavigation",
+    "AppStoreName": "In-Page Navigation",
+    "FullWidthName": "inpage-nav",
+    "ContentElementTitle": "In-Page Navigation",
+    "LeftButtonTitle": "Left Title",
+    "CenterButtonTitle": "Center Title",
+    "RightButtonTitle": "Right Title",
+    "LeftButtonIcon": "/content/files/images/inpagenavigation/img_left.png",
+    "CenterButtonIcon": "/content/files/images/inpagenavigation/img_center.png",
+    "RightButtonIcon": "/content/files/images/inpagenavigation/img_right.png",
+    "ButtonText": "Button",
+    "InternalPage": "Login",
+    "ExternalPage": "https:\\\\www.google.com\\",
+    "ProductNo": 1000,
+    "ProductURL": "en-us/side-panel-1000",
+    "ProductListName": "Category 3",
+    "ProductListUrl": "en-us/category-3"
+  },
+  "ShoppingCartUpload": {
+    "FlexiPageUrl": "ShoppingCartUpload",
+    "RegistrationPageUrl": "/profile/register",
+    "LoginPageUrl": "/profile/login",
+    "LoginPageTitle": "Login | Sana Store",
+    "ContactUsPageUrl": "contact-us",
+    "MyaccountLoggingUrl": "/profile/login",
+    "MyOrdersUrl": "/profile/orders/",
+    "MyaccountPageUrl": "/profile/",
+    "RegistrationPageTitle": "Creating a new account | Sana Store",
+    "MyAccountPageTitle": "My Account | Sana Store",
+    "Orderhistory": "Order history | Sana Store",
+    "MyQuotehistory": "Quotes history | Sana Store",
+    "InventoryHistory": "Invoices history | Sana Store",
+    "ReturnOrderHistory": "Return order history | Sana Store",
+    "ReturnReceiptsHistory": "Return receipts history | Sana Store",
+    "CreditNoteHistory": "Credit notes history | Sana Store",
+    "CheckoutPageUrl": "/en-us/checkout/orderaddress",
+    "BasketPageUrl": "shop/basket",
+    "FlexiPageTitle": "ShoppingCartUpload",
+    "ProductPageTitle": "SHOPPINGCARTUPLOAD",
+    "SystemPageTitle": "SHOPPINGCARTUPLOAD",
+    "ProductListPageTitle": "SHOPPINGCARTUPLOAD",
+    "ContentBlockName": "ShoppingCartUpload",
+    "AppStoreName": "Shopping cart upload",
+    "ContentElementTitle": "ShoppingCartUpload",
+    "CheckoutpageTitle": "Sana Store",
+    "Seperator": 1,
+    "Comma": 0,
+    "InvalidSeparator": "",
+    "ProductURL": "side-panel-70000",
+    "MaximumFileSize": 1,
+    "DefaultFileSize": 1,
+    "AccountName": "Sana_addons",
+    "ProductNo": 70000,
+    "ProductListName": "Category 3",
+    "ProductListURL": "en-us/category-3",
+    "MulitpleItemsFileItemCount": 1,
+    "SingleItemFileLocation": "TestData\\UploadFiles\\ShoppingCartUpload\\SingleItem.csv",
+    "MultipleItemsFileLocation": "TestData\\UploadFiles\\ShoppingCartUpload\\MultipleItems.csv",
+    "LargeFileLocation": "TestData\\UploadFiles\\ShoppingCartUpload\\LargeFile.csv",
+    "OutOfStockItemFileLocation": "TestData\\UploadFiles\\ShoppingCartUpload\\OutOfStockItem.csv",
+    "VariantProductFileLocation": "TestData\\UploadFiles\\ShoppingCartUpload\\VariantItem.csv",
+    "BOMProductFileLocation": "TestData\\UploadFiles\\ShoppingCartUpload\\BOMItem.csv"
+  },
+  "System": {
+    "OrderConfirmation": "Order confirmation page",
+    "SalesDocumentPages": "Sales documents pages",
+    "LoginHeading": "Login page",
+    "Registration": "Registration page",
+    "MyAccount": "My account pages",
+    "MyAccountDashboard": "My account dashboard page",
+    "CheckOut": "Checkout pages",
+    "Basket": "Basket page",
+    "ContactUs": "Contact us page"
+  },
+  "ERPConnection": {
+    "ConnectionType": "Microsoft Dynamics NAV 2013 - 2018",
+    "WebServiceUrl": "http:\\\\staging-navision.sana-test-cloud.net:9327/NAV2018_W1_SC9320/WS/automation932/Codeunit/SC_NAV_WebService?tenant=ws53973automation932",
+    "UserDomain": "ws53973automation932",
+    "User": "SANAADMIN",
+    "Password": "User1234"
+  },
+  "Team": {
+    "FlexiPageTitle": "Team",
+    "FlexiPageUrl": "Team",
+    "AppStoreName": "Team",
+    "ProductListURL": "category-4/",
+    "ProductURL": "bicycle-1000",
+    "ImageShapeDefaultOption": "Circle",
+    "LinksDefaultOption": "None",
+    "ProductListName": "Category 4",
+    "ProductName": 1000,
+    "Name1": "Albert Frank",
+    "Name2": "Isac Newton",
+    "Name3": "Brack Obama",
+    "Name4": "Elen Grey",
+    "Function1": "Software Engineer",
+    "Function2": "QA Engineer",
+    "Function3": "Project Manager",
+    "Function4": "CEO",
+    "Image1": "Albert Frank",
+    "Image2": "Isac Newton",
+    "Image3": "Brack Obama",
+    "Image4": "Elen Grey",
+    "TeamMember1Name": "Albert Frank",
+    "TeamMember2Name": "Isac Newton",
+    "TeamMember3Name": "Brack Obama",
+    "TeamMember4Name": "Elen Grey",
+    "TeamMember1Function": "Software Engineer",
+    "TeamMember2Function": "QA Engineer",
+    "TeamMember3Function": "Project Manager",
+    "TeamMember4Function": "CEO",
+    "TeamMember1Image": "Albert Frank",
+    "TeamMember2Image": "Isac Newton",
+    "TeamMember3Image": "Brack Obama",
+    "TeamMember4Image": "Elen Grey",
+    "ImageShapeSelectedOption": "Circle",
+    "Description": "This is test description about employee who works at ABC company in California,USA.",
+    "InternalPageURL": "Login",
+    "ExternalPageURL": "https:\\\\www.google.co.in",
+    "ImageShape": {
+      "Square": "Square",
+      "Heart": "Heart",
+      "Pentagram": "Pentagram",
+      "Hexagram": "Hexagram",
+      "Circle": "circle"
+    },
+    "ProductNo": 1000,
+    "LoginPageUrl": "/profile/login",
+    "LoginPageTitle": "Login | Sana Store",
+    "RegistrationPageUrl": "/profile/register",
+    "MyaccountLoggingUrl": "/profile/login",
+    "MyaccountDashboardPageUrl": "/profile",
+    "MyaccountPageUrl": "/profile/orders",
+    "RegistrationPageTitle": "Creating a new account | Sana Store",
+    "MyAccountPageTitle": "My Account | Sana Store",
+    "Orderhistory": "Order history | Sana Store",
+    "MyQuotehistory": "Quotes history | Sana Store",
+    "InventoryHistory": "Invoices history | Sana Store",
+    "ReturnOrderHistory": "Return order history | Sana Store",
+    "ReturnReceiptsHistory": "Return receipts history | Sana Store",
+    "CreditNoteHistory": "Credit notes history | Sana Store",
+    "ShipmentStoreHistory": "Shipments history | Sana Store",
+    "BasketPageTitle": "Shopping cart | Sana Store",
+    "BasketPageUrl": "shop/basket",
+    "CheckOutPageUrl": "/en-us/checkout/orderaddress",
+    "CheckoutpageTitle": "Sana Store",
+    "MyorderTemplateTitle": "Sana Store",
+    "OrderhistoryUrl": "/profile/orders",
+    "ContentElementTitle": "Team Content Element"
+  },
+  "TwitterFeed": {
+    "FlexiPageTitle": "TwitterFeed",
+    "FlexiPageUrl": "TwitterFeed",
+    "AppStoreName": "Twitter Feed",
+    "ProductNo": 70000,
+    "ProductURL": "side-panel-70000",
+    "ProductListName": "Category 3",
+    "ProductListURL": "en-us/category-3",
+    "LoginPageUrl": "/profile/login",
+    "LoginPageTitle": "Login | Sana Store",
+    "RegistrationPageUrl": "/profile/register",
+    "MyaccountLoggingUrl": "/profile/login",
+    "MyaccountPageUrl": "/profile",
+    "RegistrationPageTitle": "Creating a new account | Sana Store",
+    "MyAccountPageTitle": "My Account | Sana Store",
+    "Orderhistory": "Order history | Sana Store",
+    "MyQuotehistory": "Quotes history | Sana Store",
+    "InventoryHistory": "Invoices history | Sana Store",
+    "ReturnOrderHistory": "Return order history | Sana Store",
+    "ReturnReceiptsHistory": "Return receipts history | Sana Store",
+    "CreditNoteHistory": "Credit notes history | Sana Store",
+    "ShipmentStoreHistory": "Shipments history | Sana Store",
+    "BasketPageTitle": "Shopping cart | Sana Store",
+    "BasketPageUrl": "shop/basket",
+    "CheckOutPageUrl": "/en-us/checkout/orderaddress",
+    "CheckoutpageTitle": "Sana Store",
+    "MyorderTemplateTitle": "Sana Store",
+    "OrderhistoryUrl": "/profile/orders",
+    "ContactPageUrl": "contact-us",
+    "ContentElementTitle": "Twitter Feed",
+    "Mode": {
+      "Profile": "Profile",
+      "Hashtag": "Hashtag"
+    },
+    "DefaultAccountName": "SanaCommerce",
+    "DefaultMaxFeedCount": 20,
+    "DefaultLinkColor": null,
+    "AccountName": "Sana_addons",
+    "LinkColor": null,
+    "WidgetId": 879957002675339300,
+    "MaxFeedCount": {
+      "UpperValue": 25,
+      "LowerValue": 0
+    },
+    "AutoPlaySpeed": {
+      "UpperValue": 600,
+      "LowerValue": 0,
+      "ValidValue": 2
+    }
+  },
+  "StoreLocator": {
+    "FlexiPageTitle": "StoreLocator",
+    "FlexiPageUrl": "StoreLocator",
+    "AppStoreName": "Store Locator",
+    "DivName": "store-locator",
+    "ContentElementTitle": "Store Locator",
+    "GoogleMapAPIKey": "AIzaSyD-Ev1zX6u03XiGb0WAz46PtG_VnMOllwQ",
+    "InvalidGoogleMapAPIKey": "InvalidKey",
+    "DefaultZoomLevel": 10,
+    "DefaultSearchZoomLevel": 20,
+    "SearchRadius": 20,
+    "ReleaseChannel": {
+      "Weekly": "weekly",
+      "Quarterly": "quarterly",
+      "Version": "version"
+    },
+    "GoogleMapVersion": 3.37,
+    "LandingLocation": "6.927036,79.862385",
+    "PinPointGroupIcon": "/content/files/content/storelocator/pinpoint-group.png",
+    "PinPointLocationIcon": "/content/files/content/storelocator/pinpoint-location.png",
+    "OperatorFilter": {
+      "AND": "AND",
+      "OR": "OR"
+    },
+    "CSVFormat": {
+      "Comma": "en-US",
+      "Semicolon": "nl-NL"
+    },
+    "ProductNo": 70000,
+    "ProductURL": "side-panel-70000",
+    "ProductListName": "Category 3",
+    "ProductListURL": "en-us/category-3",
+    "DefaultCSV": {
+      "FileName": "store_locations.csv",
+      "StoresCount": 1,
+      "StoreName": "Test Store",
+      "Address": "Van Nelleweg 1, 3044 BC Rotterdam, Netherlands",
+      "Phone": "31 10 243 6000",
+      "Website": "http://www.teststore.eu.sanastore.net"
+    },
+    "SixStoresCSV": {
+      "FilePath": "TestData\\UploadFiles\\StoreLocator\\SixStoresComma.csv",
+      "StoresCount": 6,
+      "ValidCount": 6,
+      "InvalidCount": 0,
+      "StoreOne": {
+        "Name": "Isuru Food City",
+        "Address": "125A, Colombo - Hanwella Low Level Rd, Kaduwela, Sri Lanka",
+        "Phone": 41279460404,
+        "Email": "info@abgottsponsport.ch",
+        "Website": "http://www.cargillsceylon.com"
+      },
+      "Filters": {
+        "Meat": 3,
+        "Easton": 1,
+        "MeatAndEaston": 1,
+        "MeatOrEaston": 3
+      },
+      "LocationSearch": 5,
+      "LocationAndFilterSearch": 3
+    },
+    "GoogleAddressOnlyCSV": {
+      "FilePath": "TestData\\UploadFiles\\StoreLocator\\OnlyGoogleAddress.csv",
+      "StoresCount": 21,
+      "ValidCount": 21,
+      "InvalidCount": 0,
+      "StoreOne": {
+        "Name": "Store A",
+        "Address": "162/7, Ratna Building, B263, Malabe, Sri Lanka",
+        "Phone": 32111111,
+        "Email": "stans@achermannsport.ch",
+        "Website": "http://www.achermannsport.ch"
+      }
+    },
+    "EmptyCSV": {
+      "FilePath": "TestData\\UploadFiles\\StoreLocator\\EmptyCsv.csv",
+      "StoresCount": 6,
+      "ValidCount": 0,
+      "InvalidCount": 6
+    },
+    "NoGoogleAddressNoLocationCSV": {
+      "FilePath": "TestData\\UploadFiles\\StoreLocator\\NoGoogleAddressNoLocation.csv",
+      "StoresCount": 6,
+      "ValidCount": 5,
+      "InvalidCount": 1
+    },
+    "DifferentSeparatorsCSV": {
+      "FilePath": "TestData\\UploadFiles\\StoreLocator\\DifferentSeparators.csv"
+    },
+    "DuplicateIdCSV": {
+      "FilePath": "TestData\\UploadFiles\\StoreLocator\\DuplicateIds.csv",
+      "StoresCount": 6,
+      "ValidCount": 5,
+      "InvalidCount": 1
+    },
+    "MacOSCSV": {
+      "FilePath": "TestData\\UploadFiles\\StoreLocator\\MacOSStores.csv",
+      "StoresCount": 6,
+      "ValidCount": 6,
+      "InvalidCount": 0
+    },
+    "MSDOSCSV": {
+      "FilePath": "TestData\\UploadFiles\\StoreLocator\\MSDOSStores.csv",
+      "StoresCount": 6,
+      "ValidCount": 6,
+      "InvalidCount": 0
+    },
+    "SpecialCharacterFiltersCSV": {
+      "FilePath": "TestData\\UploadFiles\\StoreLocator\\SpecialCharacterFilters.csv",
+      "StoresCount": 6,
+      "ValidCount": 6,
+      "InvalidCount": 0,
+      "SpecialCharFilter": "Meat_$%@#&$%@#$",
+      "LongFilterName": "CatEy eeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsssssssssssssssssend"
+    },
+    "LargeCSV": {
+      "FilePath": "TestData\\UploadFiles\\StoreLocator\\8000Stores.csv",
+      "StoresCount": 8000,
+      "ValidCount": 7996,
+      "InvalidCount": 4
+    },
+    "FileUpload": {
+      "WindowName": "Open",
+      "FileNameInput": "Edit1",
+      "OpenButton": "Button1"
+    },
+    "CSVValidationMessages": {
+      "DuplicateId": "This line no duplicate with another"
+    }
+  },
+  "Wirecard": {
+    "Name": "Wirecard",
+    "Configuration": {
+      "BasesdOnSecure": {
+        "CustomerId": "D200411",
+        "ShopId": "3D",
+        "Secret": "DP4TMTPQQWFJW34647RM798E9A5X7E8ATP462Z4VGZK53YEJ3JWXS98B9P4F"
+      },
+      "BasedOnNon3DSecure": {
+        "CustomerId": "D200411",
+        "Secret": "CHCSH7UGHVVX2P7EHDHSY4T2S4CGYK4QBE4M5YUUG2ND5BEZWNRZW5EJYVJQ"
+      }
+    },
+    "Settings": {
+      "Name": "Wirecard",
+      "ImagePath": "/content/files/images/wirecard.jpg",
+      "Description": "An easy way to make online payments.",
+      "PaymentProvider": "wirecard",
+      "PaymentType": {
+        "Select": "SELECT",
+        "CCard": "CCARD"
+      },
+      "EnableSpecialCharacterReplace": {
+        "true": true,
+        "false": false
+      },
+      "AmountRoundOption": {
+        "Up": "UP",
+        "Down": "DOWN"
+      },
+      "Currency": "EUR",
+      "AmountExcludingTAX": 5,
+      "AmountIncludingTAX": 10
+    },
+    "TestCards": {
+      "NonSecure": {
+        "CardHolderName": "Sana Non Secure Customer",
+        "CardNumber": 4200000000000018,
+        "ExpirationMonth": 1,
+        "ExpirationYear": 2019,
+        "CVCNumber": "018"
+      },
+      "Secure": {
+        "CardHolderName": "Sana Secure Customer",
+        "CardNumber": 4012000300001003,
+        "ExpirationMonth": 1,
+        "ExpirationYear": 2019,
+        "CVCNumber": 3,
+        "Password": "wirecard"
+      }
+    },
+    "VerificationFrame": "acsFrame"
+  },
+  "ImportUrlRedirect": {
+    "Name": "Import URL redirects",
+    "RunIntervalDefaultValue": 60,
+    "RunTimeDefaultValue": "00:00",
+    "RunTimeInvaliedValue": 43212,
+    "ZeroRecords": "0 records",
+    "InvalidRecords": "2 records",
+    "FilePaths": {
+      "CSVFileDefaultPath": "/content/files/content/UrlRedirects/UrlRedirectsCSVSample.csv",
+      "ValidUrlsFilePath": "/content/files/importurlredirect/csv/urlredirects_validurls.csv",
+      "ExistingAliasFilePath": "/content/files/content/UrlRedirects/UrlRedirects_ExistingAlias.csv",
+      "EmptyFilePath": "/content/files/importurlredirect/csv/urlredirects_emptyfile.csv",
+      "InvalidHeaderFilePath": "/content/files/content/UrlRedirects/UrlRedirects_InvalidHeader.csv",
+      "InvalidLinksFilePath": "/content/files/importurlredirect/csv/urlredirects_invalidlinks.csv"
+    },
+    "ValidUrlRedirects": {
+      "AliasList": "Alias1,Alias2,Alias3,Alias4",
+      "UrlsList": "/service/return-policy,/privacy-policy,/about-us,/service/delivery",
+      "PermanentList": "false,false,true,true"
+    },
+    "UpdatedUrlRedirects": {
+      "AliasList": "Alias1,Alias2",
+      "UrlsList": "catalog,home",
+      "PermanentList": "false,false"
+    }
+  },
+  "ParallaxScroller": {
+    "AddonName": "parallax",
+    "AppStoreName": "Parallax Scroller",
+    "FlexiPageTitle": "ParallaxScroller",
+    "FlexiPageUrl": "ParallaxScroller",
+    "ContentElementTitle": "Parallax Scroller 1",
+    "CustomerSegmentName": "Non B2C Customers",
+    "DefaultValues": {
+      "DisplayInFullWidth": "OFF",
+      "UseCustomeContent": "OFF",
+      "Height": 450
+    },
+    "ImagePath": "/content/files/images/ParallaxScrollerImage1.jpg",
+    "Height": {
+      "Value": 450,
+      "ValueWithUOM": "450px",
+      "InLineCSSAttribute": "style",
+      "CSSAttributeValue": "height",
+      "InvalidValue": "text"
+    },
+    "Title": "Parallax Scroller Title",
+    "Subtitle": "Parallax Scroller Subtitle",
+    "ButtonText": "Button",
+    "CustomText": "This is a custom text",
+    "CustomHTMLText": {
+      "Selector": ".html-wrapper",
+      "HTMLTag": "h1",
+      "HTMLInput": "<h1>This is a HTML text</h1>",
+      "HTMLText": "THIS IS A HTML TEXT"
+    },
+    "ImagePath2": "/content/files/images/ContentBlockTeam/Background Image5.jpg",
+    "ValidationMessageImagePath": "The field 'Image Path' is required.",
+    "ValidationMessageHeight": "The field 'Height' is required.",
+    "InternalPage": "Home",
+    "ExternalPageURL": "https:\\\\www.google.co.in",
+    "ExtensionAddonStatus": {
+      "Enabled": "active",
+      "Disabled": "inactive"
+    },
+    "ProductNo": 70000,
+    "ProductURL": "en-us/side-panel-70000",
+    "ProductListName": "Category 3",
+    "ProductListURL": "en-us/category-3"
+  },
+  "Newsletter": {
+    "AppStoreName": "Newsletter",
+    "FlexiPageUrl": "newsletter",
+    "FlexiPageTitle": "Newsletter",
+    "ContentElementTitle": "Newsletter",
+    "GeneralSettings": {
+      "Title": "Newsletter",
+      "Subtitle": "Subscribe to our newsletter",
+      "TitleColor": null,
+      "SubtitleColor": null,
+      "EmailFieldText": "Email address",
+      "SubscribeButtonText": "Subscribe!"
+    },
+    "BackgroundSettings": {
+      "BackgroundColor": null,
+      "BackgroundImage": "/content/files/images/Newsletter/bg-newsletter.jpg"
+    },
+    "Email": "c.jayasinghe@sana-commerce.com",
+    "ProductNo": 70000,
+    "ProductURL": "side-panel-70000",
+    "ProductListName": "Category 3",
+    "ProductListURL": "en-us/category-3",
+    "LoginPageTitle": "Login | Sana Store",
+    "RegistrationPageTitle": "Creating a new account | Sana Store",
+    "MyAccountPageTitle": "My Account | Sana Store",
+    "Orderhistory": "Order history | Sana Store",
+    "MyQuotehistory": "Quotes history | Sana Store",
+    "InventoryHistory": "Invoices history | Sana Store",
+    "ReturnOrderHistory": "Return order history | Sana Store",
+    "ReturnReceiptsHistory": "Return receipts history | Sana Store",
+    "CreditNoteHistory": "Credit notes history | Sana Store",
+    "ShipmentStoreHistory": "Shipments history | Sana Store",
+    "BasketPageTitle": "Shopping cart | Sana Store",
+    "BasketPageUrl": "shop/basket",
+    "CheckOutPageUrl": "/en-us/checkout/orderaddress",
+    "CheckoutpageTitle": "Sana Store",
+    "MyorderTemplateTitle": "Sana Store",
+    "OrderhistoryUrl": "/profile/orders"
+  },
+  "FlexiTiles": {
+    "FlexiPageUrl": "FlexiUrl",
+    "FlexiPageTitle": "FlexiTitle",
+    "AppStoreName": "Flexi-tiles",
+    "ProductNo": 70000,
+    "ProductPageUrl": "/side-panel-70000",
+    "ProductPageTitle": "Side Panel | Sana Store",
+    "ProductListTitle": "Category 4",
+    "ProductListPageTitle": "Category 4 | Sana Store",
+    "ProductListPageUrl": "/category-4",
+    "RegistrationPageTitle": "Creating a new account | Sana Store",
+    "ContactUsPageTitle": "Contact us | Sana Store",
+    "LoginPageTitle": "Login | Sana Store",
+    "ContentElementTitle": "Flexi-tiles",
+    "BasketPageTitle": "Shopping cart | Sana Store",
+    "MyAccountPageTitle": "My Account | Sana Store",
+    "MyOrdersPageTitle": "Order history | Sana Store",
+    "MyQuotesPageTitle": "Quotes history | Sana Store",
+    "MyInvoicesPageTitle": "Invoices history | Sana Store",
+    "MyReturnOrdersPageTitle": "Return order history | Sana Store",
+    "MyReturnReceiptsPageTitle": "Return receipts history | Sana Store",
+    "MyCreditNotesPageTitle": "Credit notes history | Sana Store",
+    "MyShipmentsPageTitle": "Shipments history | Sana Store",
+    "MyOrderTemplatePageTitle": "Sana Store",
+    "CheckoutPagesTitle": "Sana Store",
+    "TileData": {
+      "TileHeader": "This is the Tile Header",
+      "TileHeaderTextColor": null,
+      "TileHeaderTextColorRGB": "rgb(219, 215, 34)",
+      "TileHeaderHilightColor": null,
+      "TileHeaderHilightColorRGB": "rgb(82, 221, 26)",
+      "TileDiscription": "This is the Tile Discription",
+      "TileDiscriptionTextColor": null,
+      "TileDiscriptionTextColorRGB": "rgb(32, 157, 140)",
+      "TileLinkText": "This is Test Link",
+      "TileLinkTextColor": null,
+      "TileLinkTextColorRGB": "rgb(127, 227, 43)",
+      "TileLinkTextBorderColor": null,
+      "TileLinkTextBorderColorRGB": "rgb(13, 9, 9)",
+      "LinkBackgroundColor": null,
+      "LinkBackgroundColorRGB": "rgb(171, 203, 56)",
+      "TileLinkTextBorderWidth": 2,
+      "LinkBackgroundTransparent": "transparent",
+      "ContactUsPageNavigation": "/contact-us",
+      "ContactUs": "Contact us"
+    },
+    "BackgroundSetting": {
+      "BackgroundColor": null,
+      "BackgroundImageOne": "/content/files/images/flexitiles/Jbave.jpg",
+      "BackgroundImageTwo": "/content/files/images/flexitiles/Apple.jpg",
+      "BackgroundImage3": "/content/files/images/flexitiles/Stobery.jpg",
+      "BackgroundImage4": "/content/files/images/flexitiles/Layers.jpg"
+    },
+    "UploadGridOneImage": "Jbave.jpg",
+    "UploadGridTwoImage": "Apple.jpg",
+    "UploadGridThreeImage": "Stobery.jpg",
+    "UploadGridFourImage": "Layers.jpg",
+    "RowHeight": "300px",
+    "StyleAttributeName": "style",
+    "ClassAttributeName": "class",
+    "BorderColorAttribute": "border-color",
+    "BorderAttribute": "border",
+    "BackgroundColor": "background-color",
+    "BackgroundTransparent": "background",
+    "Href": "href",
+    "RowHeightValidationError": "The field 'Row height' is required.",
+    "HTMLText": "<h1>Testing the HTML Tag</h1>",
+    "TextPositions": {
+      "TopLeft": "t-l",
+      "TopCenter": "t-c",
+      "TopRight": "t-r",
+      "MiddleLeft": "m-l",
+      "MiddleCenter": "m-c",
+      "MiddleRight": "m-r",
+      "BottomLeft": "b-l",
+      "BottomCenter": "b-c",
+      "BottomRight": "b-r"
+    }
+  },
+  "ContentImages": {
+    "InPageNavigation": {
+      "LeftButtonIcon": "/content/files/content/InPageNavigation/left-arrow.png",
+      "CenterButtonIcon": "/content/files/content/InPageNavigation/home-button.png",
+      "RightButtonIcon": "/content/files/content/InPageNavigation/home-button.png"
+    }
+  },
+  "ImageSlider": {
+    "FlexiPageTitle": "TestImageSlider",
+    "FlexiPageUrl": "TestImageSlider",
+    "AppStoreName": "Image Slider",
+    "ContentElementTitle": "Image Slider Content Element",
+    "ImageData": {
+      "ImageData1": {
+        "Title": "Sea",
+        "TitleColor": null,
+        "Subtitle": "Sea 1",
+        "SubtitleColor": null,
+        "ButtonText": "Go to login",
+        "ButtonTextColor": null,
+        "ButtonLinks": {
+          "Internal": "login",
+          "External": "https:\\\\www.google.co.in",
+          "None": null
+        },
+        "ButtonLinkType": 0,
+        "ImagePath": "/content/files/images/model.jpg",
+        "NavigationLinks": {
+          "Internal": "login",
+          "External": "https:\\\\www.google.co.in",
+          "None": null
+        },
+        "NavigationLinkType": 1
+      },
+      "ImageData2": {
+        "Title": "Desert",
+        "TitleColor": null,
+        "Subtitle": "Desert 2",
+        "SubtitleColor": null,
+        "ButtonText": "Go to home",
+        "ButtonTextColor": null,
+        "ButtonLinks": {
+          "Internal": "home",
+          "External": "https:\\\\www.google.co.in",
+          "None": null
+        },
+        "ButtonLinkType": 0,
+        "ImagePath": "/content/files/images/homepage-banner.jpg",
+        "NavigationLinks": {
+          "Internal": "home",
+          "External": "mailchimp.com",
+          "None": null
+        },
+        "NavigationLinkType": 1
+      },
+      "ImageData3": {
+        "Title": "Forest",
+        "TitleColor": null,
+        "Subtitle": "Forest 3",
+        "SubtitleColor": null,
+        "ButtonText": "Go to contact us",
+        "ButtonTextColor": null,
+        "ButtonLinks": {
+          "Internal": "contact-us",
+          "External": "mailchimp.com",
+          "None": null
+        },
+        "ButtonLinkType": 0,
+        "ImagePath": "/content/files/images/model.jpg",
+        "NavigationLinks": {
+          "Internal": "contact-us",
+          "External": "https:\\\\www.facebook.com/",
+          "None": null
+        },
+        "NavigationLinkType": 1
+      },
+      "ImageData4": {
+        "Title": "City",
+        "TitleColor": null,
+        "Subtitle": "City 4",
+        "SubtitleColor": null,
+        "ButtonText": "Go to new account",
+        "ButtonTextColor": null,
+        "ButtonLinks": {
+          "Internal": "home",
+          "External": "mailchimp.com",
+          "None": null
+        },
+        "ButtonLinkType": 0,
+        "ImagePath": "/content/files/images/homepage-banner.jpg",
+        "NavigationLinks": {
+          "Internal": "home",
+          "External": "https:\\\\en.oxforddictionaries.com/",
+          "None": null
+        },
+        "NavigationLinkType": 1
+      }
+    },
+    "NavigationButtons": {
+      "ShowNavigation": {
+        "true": true,
+        "false": false
+      },
+      "PreviousIcon": "/content/files/content/imageslider/previous-default.png",
+      "NextIcon": "/content/files/content/imageslider/next-default.png"
+    },
+    "DotNavigator": {
+      "DisplayDotNavigator": true,
+      "NavigatorIconPath": "/content/files/content/imageslider/navigator-default.png",
+      "HoverNavigatorIconPath": "/content/files/content/imageslider/navigator-hover-default.png",
+      "HeightOfTheIcon": 13,
+      "InvalidHeightOfTheIcon": 100,
+      "InvalidHeightOfTheIconError": "Please enter a value between 1 and 99",
+      "WidthOfTheIcon": 13,
+      "InvalidWidthOfTheIcon": 3601,
+      "InvalidWidthOfTheIconError": "Please enter a value between 1 and 99",
+      "DisplayNavigatorInsideSlider": false
+    },
+    "HeightType": {
+      "ExpandTheSlider": 0,
+      "Fixed": 1
+    },
+    "HeightInDesktop": 600,
+    "InvalidHeightInDesktop": 10000,
+    "InvalidHeightInDesktopError": "Please enter a value between 0 and 9999",
+    "HeightInTablet": 500,
+    "InvalidHeightInTablet": 10000,
+    "InvalidHeightInTabletError": "Please enter a value between 0 and 9999",
+    "HeightInMobile": 400,
+    "InvalidHeightInMobile": 10000,
+    "InvalidHeightInMobileError": "Please enter a value between 0 and 9999",
+    "WidthInPage": 1000,
+    "InvalidSpace": "Please enter a value between 0 and 9999",
+    "MiscellaneousSettings": {
+      "InvertedLogo": {
+        "None": null,
+        "Logo": "/content/files/images/newzealand.png"
+      },
+      "ImageTransformAs": {
+        "Slide": 0,
+        "Fade": 1
+      },
+      "ExpandSliderToWidthOfBrowser": {
+        "true": true,
+        "false": false
+      },
+      "ExpandImageToWidthOfPage": {
+        "true": true,
+        "false": false
+      },
+      "FadeImage": "ISFade",
+      "NumberOfImagesToDisplayOne": 1,
+      "NumberOfImagesToDisplayMoreThanOne": 2,
+      "SpaceBetweenImagesZero": 0,
+      "SpaceBetweenImagesMoreThanZero": "8px",
+      "InvalidSpaceBetweenImages": 101,
+      "InvalidSpaceBetweenImagesError": "Please enter a value between 0 and 100"
+    },
+    "OtherData": {
+      "ImageCountData": {
+        "ImageCount1": 1,
+        "ImageCount2": 2,
+        "ImageCount3": 3,
+        "ImageCount4": 4
+      },
+      "Positions": {
+        "Position0": 0,
+        "Position1": 1,
+        "Position2": 2,
+        "Position3": 3,
+        "Position4": 4
+      }
+    },
+    "FadeClass": "lSFade",
+    "ProductPage": {
+      "Url": "touring-bicycle-1001",
+      "ProductNo": 1001
+    },
+    "ProductListPage": {
+      "Url": "category-4",
+      "ProductTitle": "Category 4"
+    },
+    "LoginPageUrl": "/profile/login",
+    "LoginPageTitle": "Login | Sana Store",
+    "RegistrationPageUrl": "/profile/register",
+    "MyaccountLoggingUrl": "/profile/login",
+    "MyaccountDashboardPageUrl": "/profile",
+    "MyaccountPageUrl": "/profile/orders",
+    "RegistrationPageTitle": "Creating a new account | Sana Store",
+    "MyAccountPageTitle": "My Account | Sana Store",
+    "Orderhistory": "Order history | Sana Store",
+    "MyQuotehistory": "Quotes history | Sana Store",
+    "InventoryHistory": "Invoices history | Sana Store",
+    "ReturnOrderHistory": "Return order history | Sana Store",
+    "ReturnReceiptsHistory": "Return receipts history | Sana Store",
+    "CreditNoteHistory": "Credit notes history | Sana Store",
+    "ShipmentStoreHistory": "Shipments history | Sana Store",
+    "BasketPageTitle": "Shopping cart | Sana Store",
+    "BasketPageUrl": "shop/basket",
+    "CheckOutPageUrl": "/en-us/checkout/orderaddress",
+    "CheckoutpageTitle": "Sana Store",
+    "MyorderTemplateTitle": "Sana Store",
+    "OrderhistoryUrl": "/profile/orders"
+  },
+  "CustomerSegments": {
+    "B2C": {
+      "SegmentName": "B2C Customers",
+      "FilterExpression": {
+        "FieldName": "B2C Customer",
+        "Condition": "Equal",
+        "Value": true
+      }
+    },
+    "NonB2B": {
+      "SegmentName": "Non B2C Customers",
+      "FilterExpressionField": "B2C Customer",
+      "FilterExpressionValue": "No"
+    }
+  },
+  "ProductSetFilter": {
+    "FlexiPageTitle": "TestProductSetFilter",
+    "FlexiPageUrl": "TestProductSetFilter",
+    "AppStoreName": "Product Set Filter",
+    "ContentElementTitle": "Product Set Filter Content Element",
+    "ProductSetOne": {
+      "Title": "SetOne",
+      "ProductSetName": "Category 4"
+    },
+    "InvalidDuration": 32145414,
+    "InvalidDurationValidationMessage": "Please enter a value between 0 and 1000.",
+    "InvalidScale": 32145414,
+    "InvalidScaleValidationMessage": "Please enter a value between 0.01 and 1.",
+    "ProductPage": {
+      "Url": "touring-bicycle-1001",
+      "ProductNo": 1001
+    },
+    "ProductListPage": {
+      "Url": "category-4",
+      "ProductTitle": "Category 4",
+      "FilterExpressionValue": "No"
+    }
+  },
+  "HeroImage": {
+    "FlexiPageTitle": "HeroImage",
+    "FlexiPageUrl": "HeroImage",
+    "ProductNo": 70000,
+    "ProductURL": "side-panel-70000",
+    "ProductPageTitle": "Product page",
+    "ProductListName": "Category 3",
+    "ProductListURL": "en-us/category-3",
+    "ProductListPageTitle": "Product List Page",
+    "SystemPageTitle": "System Page",
+    "ContentElementTitle": "Hero Image",
+    "HeaderText": "Hero Image Header",
+    "SubHeaderText": "Hero Image Sub Header",
+    "ButtonText": "Click Here",
+    "BackgroundImagePath": "/content/files/content/heroimage/image-default.jpg",
+    "InvertedLogoPath": "/content/files/images/favicon.ico",
+    "HeaderTextColor": null,
+    "SubHeaderTextColor": null,
+    "ButtonTextColor": null,
+    "ButtonTextBackgroundColor": null,
+    "ExistingPage": "Contact Us",
+    "ExternalURL": "https://www.sana-sanacommerce.com",
+    "TextPosition": "Center",
+    "KenBurnsEffectValue": "ecb-hero-effect-ken-burn",
+    "BlackAndWhiteEffectValue": "ecb-hero-effect-black-and-white"
+  },
+  "ProductSetCarousel": {
+    "FlexiPageUrl": "ProductSetCarousel",
+    "AppStoreName": "Product Set Carousel",
+    "AddonDisplayName": "productsetcarousel",
+    "FlexiPageTitle": "ProductSetCarousel",
+    "Title": "Product Set Carousel",
+    "TextAlignment": "Center",
+    "SelectProductSet": "All products",
+    "SortBy": "No. - Ascending",
+    "PreviousIcon": "/content/files/images/productsetcarousel/icon_arrow-left.png",
+    "NextIcon": "/content/files/images/productsetcarousel/icon_arrow-right.png",
+    "SelectedProductSet": "AllProducts",
+    "ProductNo": 70000,
+    "ProductURL": "side-panel-70000",
+    "ProductListName": "Category 3",
+    "ProductListURL": "category-3",
+    "CheckoutpageTitle": "Sana Store",
+    "MyorderTemplateTitle": "Sana Store",
+    "ContactPageUrl": "contact-us",
+    "AccountName": "Sana_addons"
+  },
+  "Video": {
+    "FlexiPageUrl": "VideoUrl",
+    "FlexiPageTitle": "VideoTitle",
+    "AppStoreName": "Video",
+    "ContentElementTitle": "Video",
+    "YouTubeVideoURL": "https:\\\\youtu.be/Bey4XXJAqS8",
+    "YouTubeVideoURLId": "Bey4XXJAqS8",
+    "VimeoVideoURL": "https:\\\\vimeo.com/76990578",
+    "VimeoVideoURLId": 76990578,
+    "VideoURLOnFileSystemMP4": "/content/files/images/video/videoMP4.mp4",
+    "InvalidVideoURL": "/content/files/images/video/videoMP4.mp3",
+    "VideoThumbnailText": ".row-videothumbnail input",
+    "ThumbnailImagePath": "/content/files/images/video/Thumbnail.jpg",
+    "URLValidationMessage": "Please enter Youtube or vimeo or External URL without additional parameters",
+    "HeightInDesktop": 600,
+    "HeightInTablet": 440,
+    "HeaderText": "This is header text",
+    "HeaderTextColor": null,
+    "SubHeaderText": "This is subheader text",
+    "SubHeaderTextColor": null,
+    "HeaderHTMLInput": "<h1>This is a HTML text</h1>",
+    "HeaderHTMLText": "THIS IS A HTML TEXT",
+    "SubheaderHTMLInput": "<h1>This is a HTML text</h1>",
+    "SubheaderHTMLText": "THIS IS A HTML TEXT",
+    "InternalPage": "contact",
+    "ButtonText": "Goto Contactus",
+    "ButtonTextColor": null,
+    "ExternalPageURL": "https:\\\\www.google.lk/",
+    "ProductURL": "bicycle-1000",
+    "ProductNo": 1000,
+    "ProductListTitle": "Category 3",
+    "ProductListURL": "category-3"
+  }
+}
