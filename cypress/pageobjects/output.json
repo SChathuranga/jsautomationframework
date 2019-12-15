@@ -1,7 +1,0 @@
-{
-  "loginpage": {
-    "email": "#UserName",
-    "password": "#Password",
-    "loginbutton": ".row-actions > .btn"
-  }
-}
