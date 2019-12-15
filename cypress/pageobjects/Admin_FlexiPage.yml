@@ -1,3 +1,5 @@
+Url: flexipages
+NewItemButton: .btn-add
 SearchBox:
  DefaultSearch: .filter-box .search
  Opener: .filter-box .dropdown-toggle

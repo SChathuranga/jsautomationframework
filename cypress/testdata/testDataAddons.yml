@@ -63,7 +63,6 @@ ShoppingCartUpload:
   VariantProductFileLocation: TestData\UploadFiles\ShoppingCartUpload\VariantItem.csv
   BOMProductFileLocation: TestData\UploadFiles\ShoppingCartUpload\BOMItem.csv
 
-
 System:
   OrderConfirmation : Order confirmation page
   SalesDocumentPages : Sales documents pages
@@ -149,7 +148,6 @@ Team:
   MyorderTemplateTitle: Sana Store
   OrderhistoryUrl : /profile/orders
   ContentElementTitle: Team Content Element
-
 
 TwitterFeed:
   FlexiPageTitle: TwitterFeed
@@ -308,7 +306,6 @@ StoreLocator:
     OpenButton: Button1
   CSVValidationMessages:
     DuplicateId: This line no duplicate with another
-
 
 Wirecard:
   Name: Wirecard 
@@ -528,6 +525,7 @@ FlexiTiles:
     BottomLeft : b-l
     BottomCenter : b-c
     BottomRight : b-r
+
 ContentImages:
   InPageNavigation:
     LeftButtonIcon: /content/files/content/InPageNavigation/left-arrow.png

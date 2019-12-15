@@ -1,5 +1,5 @@
 const Testdata = require('../../testdata/testdata.json')
-
+const Controls = require('../pageobjects/controls.json')
 export function IOpen(url)
 {
     if(url.includes("https://"))
@@ -22,6 +22,20 @@ export function Fill(locator, text)
         cy.xpath(locator).type(text);
     else
         cy.get(locator).type(text);
+}
+
+export function ClearAndFill(locator, text)
+{
+    if(locator.includes('//'))
+    {
+        cy.xpath(locator).clear();
+        cy.xpath(locator).type(text);
+    }
+    else
+    {
+        cy.get(locator).clear();
+        cy.get(locator).type(text);
+    }
 }
 
 export function MouseHover(locator)
@@ -87,9 +101,39 @@ export function LoginToAdminIfNeeded()
     })
 }
 
-export function PrepareFlexiPageForCheck(flexiPageUrl)
+export function DeleteWebPageIfItExists(flexiPageUrl)
 {
+    cy.get(searchBox.Opener).then(($opener) => {
+        if($opener.is(':visible'))
+        {
+            I.Click(Controls.SearchBox.Opener);
+            I.Fill(Controls.SearchBox.SearchByUrl, flexiPageUrl);
+            I.Click(Controls.SearchBox.SearchButton);
+        }
+        else
+        {
+            I.Fill(Controls.SearchBox.SearchByUrl, flexiPageUrl);
+            I.Press(Keys.Enter);
+        }
+        
+        if (table.Lines.Count > 0)
+        {
+            I.Click(Controls.Table.Lines.First().DeleteButton);
+            I.Click(AllPages.Admin.Layout.Confirmation.Confirm);
+            I.RefreshSiteCache();
+        }
+    })
+}
 
+export function PrepareFlexiPageForCheck(flexiPageTitle, flexiPageUrl, withSave=true)
+{
+    I.DeleteWebPageIfItExists(Admin_FlexiPage.SearchBox, Admin_FlexiPage.Table, flexiPageUrl);
+    I.RemoveUrlRedirectIfItExists(flexiPageUrl);
+    I.Open(Admin_CreateFlexiPage);
+    I.Fill(Admin_CreateFlexiPage.Title, flexiPageTitle);
+    I.Fill(Admin_CreateFlexiPage.UrlField, flexiPageUrl);
+    if (withSave)
+        I.Click(Admin_CreateFlexiPage.SaveChangesButton);
 }
 
 export function SearchAdminWebPage()
@@ -110,4 +154,12 @@ export function See(locator)
         else
             cy.get(locator);
     })
+}
+
+export function Clear(locator)
+{
+    if(locator.includes('//'))
+        cy.xpath(locator).clear();
+    else
+        cy.get(locator).clear();
 }
