@@ -1,4 +1,4 @@
-const Testdata = require('../../testdata/testdata.json')
+const Testdata = require('../testdata/testdata.json')
 const Controls = require('../pageobjects/controls.json')
 const Admin = require('../pageobjects/adminPages.json')
 const Keys = require('../support/keys.json')

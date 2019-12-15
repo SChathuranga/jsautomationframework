@@ -21,8 +21,8 @@ context('NewsletterCB', () => {
         I_AddNewsletterContentBlockToFlexiPage();
         I.Click(Admin_EditFlexiPage.SaveButton);
         I.RefreshSiteCache();
-        I.Open(FlexiPage, TestData.Addons.Newsletter.FlexiPageUrl);
-        I.SeeInTitle(TestData.Addons.Newsletter.FlexiPageTitle);
+        I.Open(FlexiPage, Testdata.Addons.Newsletter.FlexiPageUrl);
+        I.SeeInTitle(Testdata.Addons.Newsletter.FlexiPageTitle);
         I.See(FlexiPage.NewsletterContentBlock);
     })
 })
