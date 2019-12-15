@@ -87,6 +87,31 @@ EditFlexiPage:
     ContentVisibilityFromDate: .content-blocks-editor .staging-settings input[name*='StartDate']
     ContentVisibilityToDate: .content-blocks-editor .staging-settings input[name*='EndDate']
 
+CreateFlexiPage:
+ Url: flexipages/create
+ Title: input[name=Title]
+ UrlField: input[name=Url]
+ PreviewButton: .btn-preview
+ CancelButton: .btn-cancel
+ SaveChangesButton: .btn-save
+ TitleValidation: "#Title-error"
+ UrlValidation: span[data-valmsg-for=Url]
+ ContentElements: ContentElementsControl
+ TextBlock: TextBlockControl
+ ImageTiles: ImageTilesControl
+ ChildMenuItems: ChildMenuItemsControl
+ ProductSetBlock: ProductSetBlockControl
+ CustomerSegmentSelector: CustomerSegmentSelectorControl
+ NewCustomerSegmentPopup: NewCustomerSegmentPopupControl
+ FullPageBanner: FullPageBannerControl
+ Usp: UspControl
+ FileManager: FileManagerControl
+ TabSet:
+  Basics: .nav-tabs a[href="#Tab_Basics"]
+  Advanced: .nav-tabs a[href="#Tab_Advanced"]
+ MetaTitle: .nav-tabs input[name=MetaTitle]
+ MetaDescription: "#MetaDescription"
+
 Layout:
  LogoutLink: .btn-logout
  Tools:

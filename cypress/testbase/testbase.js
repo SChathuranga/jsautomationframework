@@ -1,6 +1,7 @@
 const Testdata = require('../../testdata/testdata.json')
 const Controls = require('../pageobjects/controls.json')
-const Admin = require('../pageobjects/AdminPages.json')
+const Admin = require('../pageobjects/adminPages.json')
+const Keys = require('../support/keys.json')
 
 export function IOpen(url)
 {
@@ -152,9 +153,32 @@ export function PrepareFlexiPageForCheck(flexiPageTitle, flexiPageUrl, withSave=
         I.Click(Admin.CreateFlexiPage.SaveChangesButton);
 }
 
-export function SearchAdminWebPage()
+export function SearchAdminWebPage(flexiPageUrl)
 {
+    cy.get(searchBox.Opener).then(($opener) => {
+        if($opener.is(':visible'))
+        {
+            I.Click(Controls.SearchBox.Opener);
+            I.Fill(Controls.SearchBox.SearchByUrl, flexiPageUrl);
+            I.Click(Controls.SearchBox.SearchButton);
+        }
+        else
+        {
+            I.Fill(Controls.SearchBox.SearchByUrl, flexiPageUrl);
+            I.Press(Keys.Enter);
+        }
+        
+        if (table.Lines.Count > 0)
+        {
+            I.ClearAndFill(Controls.SearchBox.SearchByTitle, flexiPageUrl);
+            I.Press(Keys.Enter);
+        }
+    })
+}
 
+export function Press(key)
+{
+    c.gey('body').type(key);
 }
 
 export function AmOn(pageName)
