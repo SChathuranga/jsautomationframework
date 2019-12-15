@@ -1,0 +1,14 @@
+{
+  "NewsletterContentBlock": {
+    "Title": ".newsletter-block .form-row.row-email h2",
+    "Subtitle": ".newsletter-block .form-row.row-email p",
+    "Email": ".newsletter-block",
+    "SubscribeButton": ".newsletter-block .newsletter-btn > button:nth-child(1)",
+    "FooterSubscribeButton": ".newsletter-block .newsletter-btn button span",
+    "EmailValidator": ".newsletter-block .field-validation-error",
+    "SubscribeSuccessMessage": ".newsletter-block .newsletter-block-content-below.show h2",
+    "DefaultNewsletterContent": ".newsletter-block .column.newsletter",
+    "ContentBlock": ".newsletter-block",
+    "CloseButton": ".newsletter-block body .ui-dialog-titlebar-close"
+  }
+}

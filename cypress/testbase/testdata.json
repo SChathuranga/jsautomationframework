@@ -1,0 +1,1203 @@
+{
+  "Admin": {
+    "Users": {
+      "SysAdmin": {
+        "Name": "System Administrator",
+        "Email": "boadmin@sana-commerce.com",
+        "Password": "abcABC@1234",
+        "TestUserEmail": "automation9351@test.com",
+        "TestUserPassword": "abcABC@1234"
+      },
+      "ProductManager": {
+        "Name": "Product content manager",
+        "Email": "boproductmanager@sana-commerce.com",
+        "Password": "1a2b3c4d5e6f7g"
+      },
+      "OrderProcessor": {
+        "Name": "Order processor",
+        "Email": "boorderprocessor@sana-commerce.com",
+        "Password": "1a2b3c4d5e6f7g"
+      },
+      "Marketer": {
+        "Name": "Marketer",
+        "Email": "bomarketer@sana-commerce.com",
+        "Password": "1a2b3c4d5e6f7g"
+      },
+      "MobileManager": {
+        "Name": "Mobile manager",
+        "Email": "bomobilemanager@sana-commerce.com",
+        "Password": "1a2b3c4d5e6f7g"
+      },
+      "ShopAccountManager": {
+        "Name": "Shop account creator",
+        "Email": "boshopaccountmanager@sana-commerce.com",
+        "Password": "1a2b3c4d5e6f7g"
+      },
+      "TempAdminUser": {
+        "Name": "Temp Admin User",
+        "Email": "temp-admin-user@example.com",
+        "Password": "1a2b3c4d5e6f7g"
+      }
+    },
+    "OnlinePayment": {
+      "Prepayment": "Prepayment",
+      "PayOnAccount": "PayOnAccount",
+      "PayOnline": "PayOnline"
+    },
+    "OnlineInvoicePayment": {
+      "Disabled": "Disabled",
+      "Automatic": "Automatic",
+      "Manual": "Manual"
+    },
+    "OrderProcessingStrategy": {
+      "Default": "RealTime",
+      "OptimizeForFastOrdering": "Fast",
+      "OptimizeForLargeOrders": "Synchronized"
+    },
+    "CheckoutOption": {
+      "Order": "Order",
+      "Quote": "Quote",
+      "OrderAndQuote": "OrderAndQuote"
+    },
+    "QuoteToOrderConversion": {
+      "WithCheckout": "WithCheckout",
+      "Disabled": "PromotionDisabled",
+      "Unattended": "Unattended"
+    },
+    "StoreType": {
+      "Private": true,
+      "Public": false
+    },
+    "SendOrderConfirmationEmail": {
+      "AlwaysSend": "AlwaysSend",
+      "WebServiceOrdersOnly": "WebServiceOrdersOnly",
+      "WebstoreOrdersOnly": "WebshopOrdersOnly",
+      "NeverSend": "NeverSend"
+    },
+    "ProfileName": {
+      "Editable": "AddressName",
+      "ReadOnly": "AddressName_ReadOnly"
+    },
+    "ProductPagesLayout": {
+      "PageLayoutDefault": "Use default page layout",
+      "DetailsB2C": "DetailsB2C",
+      "DetailsB2B": "DetailsB2B",
+      "DetailsB2BWithMatrix": "DetailsB2BWithMatrix"
+    },
+    "ProductListPageLayout": {
+      "ListB2C": "List",
+      "ListB2B": "ListB2B"
+    },
+    "ProductListPageViewModel": {
+      "List": "List",
+      "Grid": "Grid"
+    },
+    "ProductListPageSortOption": {
+      "IdAscending": "Id",
+      "IdDescending": "Id_desc",
+      "TitleAscending": "Title",
+      "TitleDescending": "Title_desc"
+    },
+    "ProductListPagingType": {
+      "Links": "Links",
+      "LoadMore": "LoadMore",
+      "Scrolling": "ContinuousScrolling"
+    },
+    "PasswordStrength": {
+      "VeryWeak": 0,
+      "Weak": 1,
+      "SoSo": 2,
+      "Good": 3,
+      "Great": 4
+    }
+  },
+  "PageType": {
+    "FlexiPage": "FlexiPage",
+    "ProductListPage": "ProductListPage",
+    "NewsItem": "NewsItem",
+    "FaqPage": "FaqPage"
+  },
+  "ShopAccount": {
+    "B2C": {
+      "UserName": "B2C customer",
+      "EmailAddress": "b2c@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "B2B": {
+      "UserName": "B2B customer",
+      "EmailAddress": "b2b@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "B2B_WithOneShippingAddress": {
+      "EmailAddress": "b2b_with_1_shipping_address@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "B2B_WithSeveralShippingAddresses": {
+      "EmailAddress": "b2b-with-several-shipping-addresses@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "B2B_WithLess10ShippingAddresses": {
+      "EmailAddress": "b2b-with-less-10shipping-addresses@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "B2B_WithServiceCharge": {
+      "Name": "B2b customer with service charge",
+      "EmailAddress": "b2b-with-service-charge@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g",
+      "Id": "B2b customer"
+    },
+    "B2B_WithInvoiceDiscount": {
+      "Name": "B2b customer with invoice discount",
+      "EmailAddress": "b2b-with-invoice-discount@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g",
+      "Id": "B2b customer"
+    },
+    "B2B_WithPrepayment": {
+      "Name": "B2b customer with 25% prepayment",
+      "EmailAddress": "b2b-with-25-prepayment@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g",
+      "Id": "B2B PREPAY1"
+    },
+    "Contact_WithOneShippingAddress": {
+      "EmailAddress": "contact_with_1_shipping_address@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "Contact_WithSeveralShippingAddresses": {
+      "EmailAddress": "contact-with-several-shipping-addresses@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "Contact_WithLess10ShippingAddress": {
+      "EmailAddress": "contact-with-less-10shipping-addresses@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "Contact_WithUSD": {
+      "UserName": "Contact with USD",
+      "EmailAddress": "contact-with-usd@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "Contact_WithRupiah": {
+      "UserName": "Contact with Rupiah",
+      "EmailAddress": "contact-with-rupiah@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "Contact": {
+      "UserName": "Contact",
+      "EmailAddress": "contact@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "Contact_WithServiceCharge": {
+      "Name": "Contact with service charge",
+      "EmailAddress": "contact-with-service-charge@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g",
+      "Id": "CONT2000094"
+    },
+    "Contact_WithInvoiceDiscount": {
+      "Name": "Contact with invoice discount",
+      "EmailAddress": "contact-with-invoice-discount@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g",
+      "Id": "CONT2000094"
+    },
+    "SalesAgent": {
+      "UserName": "Sales Agent",
+      "EmailAddress": "salesagent@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g",
+      "CustomerWithServiceCharge": {
+        "Name": "B2b customer"
+      },
+      "CustomerWithInvoiceDiscount": {
+        "Name": "B2b customer"
+      }
+    },
+    "SalesAgent_WithSeveralShippingAddresses": {
+      "EmailAddress": "salesagent-with-several-shipping-addresses@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g",
+      "CustomerWithSeveralShippingAddresses": {
+        "Name": "B2b customer"
+      },
+      "CustomerWithLess10ShippingAdresses": {
+        "Name": "James Dailey Sportswear Ltd."
+      },
+      "CustomerWith1ShippingAddress": {
+        "Name": "B2bCustomer prepay 100"
+      }
+    },
+    "B2C_WithoutOrders": {
+      "EmailAddress": "b2c-without-orders@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "B2B_WithoutOrders": {
+      "Name": "B2B Customer",
+      "EmailAddress": "b2b-without-orders@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g",
+      "Id": "C00061"
+    },
+    "B2B_WithUSD": {
+      "EmailAddress": "b2b-with-usd-currency@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "B2B_WithRupiah": {
+      "EmailAddress": "b2b-with-rupiah-currency@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "SalesAgent_WithoutOrders": {
+      "UserName": "salesagent without orders",
+      "EmailAddress": "salesagent-without-orders@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g",
+      "CustomerWithoutOrders": {
+        "ID": "CUST2000998",
+        "Name": "b2c"
+      }
+    },
+    "Contact_WithoutOrders": {
+      "Name": "Contact",
+      "Email": "contact-without-orders@sana-commerce.com",
+      "Id": "C-1002",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "B2C_WithOrders": {
+      "UserName": "b2c with orders",
+      "EmailAddress": "b2c-with-orders@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "B2B_WithOrders": {
+      "EmailAddress": "b2b-with-orders@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g",
+      "UserName": "b2b with orders",
+      "Name": "The Cannon Fashion Stores PLC 111"
+    },
+    "SalesAgent_WithOrders": {
+      "EmailAddress": "salesagent-with-orders@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g",
+      "CustomerWithOrders": {
+        "ID": "C00010",
+        "Name": "The Cannon Fashion Stores PLC 111"
+      }
+    },
+    "Contact_WithOrders": {
+      "UserName": "Contact with orders",
+      "EmailAddress": "contact-with-orders@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "B2C_WithUSD": {
+      "EmailAddress": "b2c-with-usd-currency@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "B2C_WithRupiah": {
+      "EmailAddress": "b2c-with-rupiah-currency@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "ForChangingPassword": {
+      "B2BCustomer": {
+        "Name": "B2B Customer",
+        "Email": "changepassword-b2b@sana-commerce.com",
+        "Password": "1a2b3c4d5e6f7g",
+        "Id": "B2B CUSTOMER"
+      },
+      "B2CCustomer": {
+        "Name": "B2C Customer",
+        "Email": "changepassword-b2c@sana-commerce.com",
+        "Password": "1a2b3c4d5e6f7g",
+        "Id": "B2C CUSTOMER"
+      },
+      "Contact": {
+        "Name": "Contact",
+        "Email": "changepassword-contact@sana-commerce.com",
+        "Password": "1a2b3c4d5e6f7g",
+        "Id": "CONT2000094"
+      },
+      "SalesAgent": {
+        "Name": "SalesAgent",
+        "Email": "changepassword-salesagent@sana-commerce.com",
+        "Password": "1a2b3c4d5e6f7g",
+        "Id": "VK2"
+      }
+    },
+    "ForProfileEdit": {
+      "B2CCustomer": {
+        "Name": "B2C Customer",
+        "Email": "editprofile-b2c@sana-commerce.com",
+        "Password": "1a2b3c4d5e6f7g",
+        "Id": "B2C CUSTOMER"
+      },
+      "B2BCustomer": {
+        "Name": "B2B Customer",
+        "Email": "editprofile-b2b@sana-commerce.com",
+        "Password": "1a2b3c4d5e6f7g",
+        "Id": "B2B CUSTOMER"
+      },
+      "SalesAgent": {
+        "Name": "SalesAgent",
+        "Email": "editprofile-salesagent@sana-commerce.com",
+        "Password": "1a2b3c4d5e6f7g",
+        "Id": "VK1"
+      },
+      "Contact": {
+        "Name": "Contact",
+        "Email": "editprofile-contact@sana-commerce.com",
+        "Password": "1a2b3c4d5e6f7g",
+        "Id": "CONT2000094"
+      }
+    },
+    "AccountManager": {
+      "Name": "Account Manager",
+      "EmailAddress": "manager@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g",
+      "CustomerId": "B2B CUSTOMER"
+    },
+    "AccountManager_WithoutOrders": {
+      "EmailAddress": "manager-without-orders@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g",
+      "CustomerId": "B2B CUSTOMER"
+    },
+    "SubAccount_Simple": {
+      "EmailAddress": "subaccount1@sana-commerce.com",
+      "Name": "Simple employee",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "SubAccount_MiddleManager": {
+      "EmailAddress": "subaccount2@sana-commerce.com",
+      "Name": "Middle manager",
+      "Password": "1a2b3c4d5e6f7g"
+    },
+    "TempShopAccount": {
+      "Name": "Temp shop account",
+      "Email": "temp-sa@sana-commerce.com",
+      "Password": "1a2b3c4d5e6f7g",
+      "CustomerId": "B2B Customer",
+      "AccountType": "Customer"
+    }
+  },
+  "TempCustomAddress": {
+    "Name": "NameToShip",
+    "Address": "addressToShip",
+    "Address2": "address2ToShip",
+    "Zip": "0777 SS",
+    "City": "cityToShip"
+  },
+  "Flexi": {
+    "Url": "catalog"
+  },
+  "ProductList": {
+    "MainMenuCategory": "webtest",
+    "ShortList": "webtest/wt-shot/",
+    "LongList": "webtest/wt-long/",
+    "LargeSizeList": "size-include-l/"
+  },
+  "Product": {
+    "Orderable": {
+      "Url": "category-3/e-colour-full-sheet-type-1-53cm-x-1-22m-10968",
+      "SCU_Url": "side-panel-70000",
+      "Id": "WT_V_P_CS",
+      "Title": "WT - VARIANT PRODUCT WITH COLOR AND SIZE",
+      "IncorrectStep": 1.02,
+      "UOM": {
+        "Name": "packing111",
+        "Value": "CON"
+      },
+      "MinimunOrderableQuantity": 1
+    },
+    "Orderable2": {
+      "Url": "wt-simple-product-wt_s",
+      "Id": "WT_S",
+      "Title": "WT SIMPLE PRODUCT"
+    },
+    "WithAttachments": {
+      "Url": "wt-simple-product-wt_s",
+      "Id": "WT_S"
+    },
+    "WithoutAtachments": {
+      "Url": "wt-simple-lowstock-wt%20simple%20lowstock",
+      "Id": "WT SIMPLE LOWSTOCK"
+    },
+    "WithErpAttachment": {
+      "Url": "wt-bom-wt_bom",
+      "Id": "WT_BOM"
+    },
+    "WithCategory": {
+      "Url": "wt-simple-product-wt_s",
+      "Id": "WT_S",
+      "Category": "WT Shot",
+      "CategoryUrl": "webtest/wt-shot/"
+    },
+    "WithoutCategory": {
+      "Url": "mountain-boot-model-1-mnboots1"
+    },
+    "WithWeight": {
+      "Id": "WT_S",
+      "Url": "wt-simple-product-wt_s",
+      "WeightForPcs": 10
+    },
+    "WithUOMSelection": {
+      "Url": "wt-simple-product-wt_s",
+      "Id": "WT_S",
+      "Title": "WT Simple Product",
+      "CategoryUrl": "webtest/wt-shot/",
+      "UOM": {
+        "Name": "Piece",
+        "Value": "PCS"
+      },
+      "UOM2": {
+        "Name": "Box",
+        "Value": "BOX"
+      }
+    },
+    "WithoutUOMSelection": {
+      "Url": "wt-simple-lowstock-wt%20simple%20lowstock"
+    },
+    "WithSpecification": {
+      "Url": "wt-simple-product-with-specification-wt_s_s",
+      "Id": "WT_S_S",
+      "Title": "WT Simple Product With Specification",
+      "Category": "WT Shot",
+      "CategoryUrl": "webtest/wt-shot/"
+    },
+    "WithImage": {
+      "LagreImage": {
+        "Url": "wt-simple-product-wt_s"
+      },
+      "SeveralImages": {
+        "Url": "wt-simple-product-wt_s"
+      },
+      "SingleImage": {
+        "Url": "wt-bom-wt_bom"
+      },
+      "NoImage": {
+        "Url": "gianni-versace-gold-necklace-wt--000001vss"
+      }
+    },
+    "Variant": {
+      "Url": "wt-variant-product-with-color-and-size-wt_v_p_cs",
+      "Id": "WT_V_P_CS",
+      "UOM": {
+        "Name": "packing111",
+        "Value": "CONE"
+      },
+      "CategoryUrl": "webtest/wt-shot/",
+      "WithActionPrice": {
+        "Url": "wt-variant-product-with-color-and-size-wt_v_p_cs"
+      },
+      "WithoutActionPrice": {
+        "Url": "wt-variant-product-wt_v_p"
+      },
+      "WithVolumePrice": {
+        "Url": "wt-variant-product-with-color-and-size-wt_v_p_cs"
+      },
+      "WithoutVolumePrice": {
+        "Url": "wt-variant-product-wt_v_p"
+      },
+      "WithZeroReviews": {
+        "Url": "wt-variant-product-wt_v_p"
+      },
+      "WithSeveralReviews": {
+        "Url": "wt-variant-product-with-color-and-size-wt_v_p_cs",
+        "Id": "WT_V_P_CS"
+      },
+      "WithUOMSelection": {
+        "Url": "wt-variant-product-wt_v_p",
+        "UOM": {
+          "Name": "Piece"
+        },
+        "UOM2": {
+          "Name": "Box",
+          "Value": "BOX"
+        }
+      },
+      "WithoutUOMSelection": {
+        "Url": "jetster-0102208",
+        "UOM": {
+          "Name": "Piece"
+        }
+      },
+      "WithAttachments": {
+        "Url": "wt-variant-product-wt_v_p",
+        "Id": "WT_V_P"
+      },
+      "WithoutAttachments": {
+        "Url": "wt-variant-product-with-color-and-size-wt_v_p_cs",
+        "Id": "WT_V_P_CS"
+      },
+      "WithErpAttachment": {
+        "Url": "dandy-0102458",
+        "Id": "0102458"
+      }
+    },
+    "Standard": {
+      "Url": "mountain-boot-model-1-mnboots1",
+      "Id": "MNBOOTS1",
+      "UOM": "Piece"
+    },
+    "WithVariants": {
+      "Url": "boxer-0102015",
+      "Id": 33805,
+      "Title": "BOXER",
+      "UOM": "Piece",
+      "FirstColor": "Bright Fuchsia",
+      "FirstSize": 34,
+      "LastColor": "Dusty Green",
+      "LastSize": 44,
+      "Category": "outerwear",
+      "CategoryUrl": "/girls/outerwear/"
+    },
+    "SimpleVariant": {
+      "Url": "wt-variant-product-wt_v_p",
+      "Id": "WT_V_P",
+      "Title": "WT VARIANT PRODUCT",
+      "UOM": {
+        "Value": "PCS",
+        "Name": "Piece",
+        "Step": 1,
+        "IncorrectStep": 1.02
+      },
+      "OrderableValue": "WHITE",
+      "OrderableComponentText": "White",
+      "Orderable2Value": "BLUE",
+      "Orderable2Text": "Blue",
+      "CategoryUrl": "webtest/wt-shot/"
+    },
+    "ComplexVariant": {
+      "Url": "wt-variant-product-with-color-and-size-wt_v_p_cs",
+      "Id": "WT_V_P_CS",
+      "Title": "WT - VARIANT PRODUCT WITH COLOR AND SIZE",
+      "UOM": {
+        "Name": "packing111",
+        "Value": "CON"
+      },
+      "ComponentOneName": "Color",
+      "ComponentTwoName": "Size",
+      "Orderable": {
+        "ComponentOneValue": "BLACK",
+        "ComponentTwoValue": "BLAC-42",
+        "QuickOrderComponentTwoValue": 42
+      },
+      "Orderable2": {
+        "ComponentOneValue": "WHITE",
+        "ComponentTwoValue": "WHIT-44",
+        "QuickOrderComponentTwoValue": 44
+      }
+    },
+    "WithColor": {
+      "Url": "wt-variant-product-wt_v_p",
+      "Id": "WT_V_P",
+      "Title": "WT VARIANT PRODUCT",
+      "UOM": "Piece",
+      "UOMStep": 1,
+      "IncorrectUOMStep": 1.02,
+      "BasketQuantityForNoItem": 0,
+      "BasketQuantityForOneItem": 1,
+      "BasketQuantityForTwoItems": 2,
+      "QuantityLableAsOne": 1,
+      "QuantityLableAsHalf": 0.5,
+      "FirstColor": "White",
+      "LastColor": "Beige1",
+      "BlockedColor": "Purple",
+      "SelectedValueTwo": 2,
+      "BlackColor": "Black",
+      "RedColor": "Red",
+      "CategoryUrl": "webtest/wt-shot/"
+    },
+    "WithColorAndSize": {
+      "Url": "wt-variant-product-with-color-and-size-wt_v_p_cs",
+      "Id": "WT_V_P_CS",
+      "Title": "WT - VARIANT PRODUCT WITH COLOR AND SIZE",
+      "FirstColor": "Black",
+      "FirstSize": 42,
+      "SecondSize": 44,
+      "LastColor": "Red",
+      "LastSize": 46,
+      "UOM": "packing111",
+      "BasketQuantityForNoItem": 0,
+      "BasketQuantityForOneItem": 1,
+      "BasketQuantityForTwoItems": 2,
+      "QuantityLableAsOne": 1,
+      "QuantityLableAsTwo": 2,
+      "QuantityLableAsHalf": 0.5,
+      "CategoryUrl": "webtest/wt-shot/"
+    },
+    "WithVariantsAndWithoutUOMSelection": {
+      "Url": "jetster-0102208",
+      "Id": "0102208",
+      "Title": "Jetster",
+      "UOM": "Piece"
+    },
+    "SimpleProduct": {
+      "Url": "wt-simple-product-wt_s",
+      "UOM": "Piece",
+      "UOMStep": 1,
+      "IncorrectUOMStep": 1.02,
+      "BasketQuantityForNoItem": 0,
+      "BasketQuantityForOneItem": 1,
+      "BasketQuantityForTwoItems": 2,
+      "QuantityLableAsOne": 1,
+      "QuantityLableAsTwo": 2,
+      "QuantityLableAsHalf": 0.5,
+      "Id": "WT_S",
+      "Title": "WT Simple Product",
+      "Category": "WT Shot",
+      "CategoryUrl": "webtest/wt-shot/"
+    },
+    "Simple": {
+      "Url": "wt-simple-product-wt_s",
+      "Id": "WT_S",
+      "Title": "WT Simple Product",
+      "UOM": {
+        "Value": "PCS",
+        "Name": "Piece",
+        "Step": 1
+      },
+      "IncorrectUOMStep": 1.02,
+      "CategoryUrl": "webtest/wt-shot/",
+      "WithActionPrice": {
+        "Url": "wt-simple-actionprice-wt_s_ap",
+        "Id": "WT_S_AP",
+        "Title": "WT Simple ActionPrice",
+        "CategoryUrl": "webtest/wt-shot/"
+      },
+      "Blocked": {
+        "Url": "wt-simple-blocked-wt_s_b",
+        "Id": "WT_S_B",
+        "Title": "WT Simple Blocked",
+        "CategoryUrl": "webtest/wt-shot/"
+      },
+      "OutOfStock": {
+        "Url": "wt-simple-out-of-stock-wt_s_oos",
+        "Id": "WT_S_OOS",
+        "Title": "WT Simple Out of stock",
+        "CategoryUrl": "webtest/wt-shot/"
+      },
+      "WithLowStock": {
+        "Url": "wt-simple-lowstock-wt%20simple%20lowstock",
+        "Id": "WT SIMPLE LOWSTOCK",
+        "Title": "WT Simple LowStock",
+        "CategoryUrl": "webtest/wt-shot/"
+      },
+      "WithVolumePrice": {
+        "Url": "wt-simple-product-with-vol-price-wt%20simple%20vol%20price",
+        "Id": "WT SIMPLE VOL PRICE",
+        "Title": "WT Simple Product With Vol Price",
+        "CategoryUrl": "webtest/wt-shot"
+      }
+    },
+    "WithActionPrice": {
+      "Url": "wt-simple-actionprice-wt_s_ap",
+      "Id": "WT_S_AP",
+      "Title": "WT Simple ActionPrice",
+      "Category": "WT Shot",
+      "CategoryUrl": "webtest/wt-shot/"
+    },
+    "BlockedProduct": {
+      "Url": "wt-simple-blocked-wt_s_b",
+      "Id": "WT_S_B",
+      "Title": "WT Simple Blocked",
+      "Category": "WT Shot",
+      "CategoryUrl": "webtest/wt-shot/"
+    },
+    "OutOfStockProduct": {
+      "Url": "wt-simple-out-of-stock-wt_s_oos",
+      "Id": "WT_S_OOS",
+      "Title": "WT Simple Out of stock",
+      "Category": "WT Shot",
+      "CategoryUrl": "webtest/wt-shot/"
+    },
+    "LowStockProduct": {
+      "Url": "wt-simple-lowstock-wt%20simple%20lowstock",
+      "Id": "WT SIMPLE LOWSTOCK",
+      "Title": "WT Simple LowStock",
+      "Category": "WT Shot",
+      "CategoryUrl": "webtest/wt-shot/"
+    },
+    "InStockProduct": {
+      "Url": "wt-simple-instock-wt%20simple%20instock",
+      "Id": "WT SIMPLE INSTOCK",
+      "Title": "WT Simple InStock",
+      "CategoryUrl": "webtest/wt-shot/"
+    },
+    "SimpleProductWithVolPrice": {
+      "Url": "wt-simple-product-with-vol-price-wt%20simple%20vol%20price",
+      "Id": "WT SIMPLE VOL PRICE",
+      "Title": "WT Simple Product With Vol Price",
+      "Category": "WT Shot",
+      "CategoryUrl": "webtest/wt-shot/"
+    },
+    "ProductWithUOMSelection": {
+      "Url": "wt-simple-product-wt_s",
+      "Id": "WT_S",
+      "Title": "WT Simple Product"
+    },
+    "BOM": {
+      "Simple": {
+        "Url": "wt-bom-wt_bom",
+        "Id": "WT_BOM",
+        "Title": "WT BOM",
+        "CategoryUrl": "webtest/wt-shot/"
+      },
+      "NonOrderable": {
+        "Url": "bom-product-as-nonorderable-wt_bom_nonorder",
+        "Id": "WT_BOM_NONORDER",
+        "Title": "BOM Product as NonOrderable",
+        "CategoryUrl": "/webtest/wt-long/"
+      },
+      "OutOfStock": {
+        "Url": "bom-product-out-of-stock-wt_bom_oos",
+        "Id": "WT_BOM_OOS",
+        "Title": "BOM Product (Out of Stock)",
+        "CategoryUrl": "/webtest/wt-long/"
+      }
+    },
+    "Prepacks": {
+      "Id": "PRODUCT4"
+    },
+    "WithDiscount": {
+      "Url": "bom-product-with-sales-discount-wt_bom_sd",
+      "Id": "WT_BOM_SD",
+      "Title": "BOM Product with Sales Discount"
+    },
+    "Layout": {
+      "Green": "Green",
+      "White": "White",
+      "Consumer": "Consumer",
+      "Business": "Business"
+    },
+    "BasketSummary": {
+      "BasketSummarryNumberNoItem": 0,
+      "BasketSummarryNumberForOneItem": 1,
+      "BasketSummarryNumberForTwoItems": 2,
+      "BasketSummarryNumberForThreeItems": 3
+    }
+  },
+  "Address": {
+    "Test1": {
+      "Street": "some street name"
+    },
+    "Test2": {
+      "Street2": "some other streets"
+    }
+  },
+  "General": {
+    "Currency": "EUR",
+    "CurrencyName": "Euro"
+  },
+  "NewCustomerAccount": {
+    "Name": "Name",
+    "City": "City",
+    "Address": "Address",
+    "Address2": "Address2",
+    "PhoneNumber": "Phone No",
+    "ZipCode": 121212,
+    "Email": "new-customer@example.com",
+    "Faxno": 222222,
+    "TaxNo": 333333,
+    "Password": "1a2b3c4d5e6f7g",
+    "prospectEmail": "prospect@sana-commerce.com"
+  },
+  "Password": {
+    "Default": "1a2b3c4d5e6f7g",
+    "New": "7g6f5e4d3c2b1a",
+    "Strong": "1Q!2W@3E#4R$5T%6Y^7U&8I*9o(0P.",
+    "Short": 111,
+    "Another": "1Q!2W@3E#4",
+    "VeryWeak": "abc",
+    "Weak": "abc1",
+    "SoSo": "1Q!2W@3",
+    "Good": "1Q!2W@3E#4",
+    "Great": "1Q!2W@3E#4R$5T%6Y^7U&8I"
+  },
+  "OrderDetails": {
+    "PaymentMethod": "Test Payment Method",
+    "WrongDateTo": "11/10/2010",
+    "IncorrectDateFormat": {
+      "IncorrectMonth": "13/13/2015",
+      "DDMMYYY": "29/13/2013"
+    },
+    "CorrectDateFrom": "10/11/2015",
+    "CorrectDateTo": "11/11/2015",
+    "IncorrectOrderNo": "incorrectNO",
+    "CorrectOrderNo": "ORD/303240",
+    "DiscountCodeTypeName": "Fixed"
+  },
+  "DocumentType": {
+    "Order": "Order",
+    "Quote": "Quote",
+    "Invoice": "Posted invoice detail",
+    "Shipment": "Posted shipment",
+    "Return": "Posted return receipt",
+    "Credit": "Credit note"
+  },
+  "ContactUs": {
+    "CompanyName": "CompanyName",
+    "FirstName": "FirstName",
+    "LastName": "LastName",
+    "Comments": "Comments"
+  },
+  "UOMDropdownValues": {
+    "Box": "Box",
+    "Piece": "Piece"
+  },
+  "RepresentCustomer": {
+    "CorrectCustomer": {
+      "No": "C20030",
+      "Name": "Jean de Bouvier",
+      "Address": "NL-1009 AG"
+    },
+    "NonInvoiceDiscountCustomer": "Sisters_Byoux",
+    "InvoicdeDiscountCustomer": "The Cannon Fashion Stores PLC 111"
+  },
+  "CheckoutData": {
+    "ShippingMethod": "Test Shipping method",
+    "ShippingMethodAlternative": "Test Shipping method alternative",
+    "ShippingMethodByOrderTotal": "Fixed per country and order total",
+    "ShippingMethodByWeight": "Fixed per country and weight",
+    "ShippingMethodBySpecificCountry": "Test Shipping method with specific country",
+    "PaymentMethod": "Test Payment Method",
+    "PaymentMethodVISAIngenico": "VISA Ingenico",
+    "PaymentMethodInAccountAlternative": "Alternative Payment Method",
+    "PaymentMethodKlarna": "Klarna",
+    "PaymentMethodTemp": "Payment method for delete"
+  },
+  "Variants": {
+    "Color": "Color",
+    "Size": "Size"
+  },
+  "CustomerSegments": {
+    "Name": {
+      "Customer": {
+        "Email": "E-mail",
+        "Name": "Name",
+        "Address": "Address",
+        "AllowLineDisc": "Allow Line Disc.",
+        "Amount": "Amount",
+        "Priority": "Priority",
+        "LastDateModified": "Last Date Modified",
+        "DateModified": "Date modified",
+        "ApplicationMethod": "Application Method",
+        "BalanceLCY": "Balance (LCY)",
+        "Country": "Country/Region Code",
+        "PhoneNo": "Phone No.",
+        "IsB2C": "B2C Customer"
+      },
+      "ShopAccount": {
+        "LoggedIn": "Logged in",
+        "LastLoginDate": "Last login date",
+        "ShopAccountType": "Shop account type"
+      },
+      "Basket": {
+        "NumberOfShoppingCartItems": "Number of shopping cart items"
+      }
+    },
+    "Condition": {
+      "Contains": "Contains",
+      "Between": "Between",
+      "Less": "Less",
+      "Equal": "Equal",
+      "NotEqual": "NotEqual"
+    },
+    "Value": {
+      "SalesAgent": "Sales agent",
+      "Yes": true,
+      "No": false
+    },
+    "Title": {
+      "B2CCustomer": "B2C",
+      "NotB2CCustomer": "NOT B2C",
+      "EmptyBasket": "Empty Basket",
+      "FullBasket": "Full Basket"
+    }
+  },
+  "ContentElement": {
+    "DisplayText": {
+      "B2C": "This text should be visible only for B2C customers",
+      "NotB2C": "This text should be visible for all customers except B2C",
+      "EmptyBasket": "This text should be visible when basket is empty",
+      "FullBasket": "This text should be visible when basket is not empty"
+    }
+  },
+  "AuthorizationStatus": {
+    "Pending": "Pending",
+    "Approved": "Approved",
+    "Declined": "Declined"
+  },
+  "Order": {
+    "WithDiscountProduct": {
+      "No": "ORD/314818",
+      "Url": "profile/orders/details?orderid=order_ORD/314818"
+    },
+    "WithAttachments": "ORD/314641",
+    "ForEdit": {
+      "No": "ORD/314250",
+      "Url": "profile/orders/details?orderid=order_ORD/314250",
+      "ProductLinesAmount": 1
+    },
+    "ForReorder": {
+      "No": "ORD/321059",
+      "Url": "profile/orders/details?orderid=order_ORD/321059"
+    },
+    "ForB2CReorder": {
+      "No": "ORD/321430",
+      "Url": "profile/orders/details?orderid=order_ORD/321430"
+    },
+    "ForB2b": {
+      "No": "ORD/314818",
+      "Url": "profile/orders/details?orderid=order_ORD/314818"
+    },
+    "ForB2c": {
+      "No": "ORD/321430",
+      "Url": "profile/orders/details?orderid=order_ORD/321430"
+    },
+    "ForReturnOrder": {
+      "No": "PINV2000095",
+      "Url": "profile/orders/details?orderid=invoice_pinv2000095"
+    },
+    "ForReturnOrderDisabled": {
+      "No": "PINV2000094",
+      "Url": "profile/orders/details?orderid=invoice_pinv2000094"
+    },
+    "ForReturnOrderB2cCustomer": {
+      "No": "PINV2000100",
+      "Url": "profile/orders/details?orderid=invoice_pinv2000100"
+    }
+  },
+  "ProductSets": {
+    "Name": {
+      "ProductCategory": "Product category",
+      "Color": "COLOR",
+      "Price": "Price",
+      "Size": "SIZE"
+    },
+    "Condition": {
+      "Equal": "=",
+      "NotEqual": "<>",
+      "Contains": "Contains",
+      "Between": "Between"
+    },
+    "Value": {
+      "Tissot": "Tissot",
+      "Accessories": "Girls\\Accessories",
+      "Trousers": "Men's Trousers",
+      "Black": "Black",
+      "XS": "XS"
+    }
+  },
+  "LocalImages": {
+    "Koala": "C:\\Users\\Public\\Pictures\\Sample Pictures\\Koala.jpg",
+    "Penguins": "C:\\inetpub\\wwwroot\\scl_dev\\Sana.Commerce.Startersite\\content\\files\\images\\Penguins.jpg"
+  },
+  "ContentImages": {
+    "Logo": "/content/files/images/frontendeditor/Logo.png",
+    "FullPageBanner": "/content/files/images/Homepage-banner.jpg",
+    "ImageSvg": "/content/files/images/credit_cards.svg"
+  },
+  "MathOperation": {
+    "Equal": "=",
+    "NotEqual": "<>",
+    "Less": "<"
+  },
+  "UploadFiles": {
+    "ImageJpg": "TestData\\UploadFiles\\Image.jpg",
+    "FilePdf": "TestData\\UploadFiles\\File.pdf",
+    "ImageSvg": "TestData\\UploadFiles\\credit_cards.svg"
+  },
+  "DiscountOnShoppingCart": {
+    "Name": "Discount name",
+    "Attributes": {
+      "ExpiredPeriod": "ExpiredPeriod",
+      "NotExpiredPeriod": "NotExpiredPeriod",
+      "MaxRedeem": "MaxRedeem"
+    }
+  },
+  "ImageSlider": {
+    "FlexiPageTitle": "TestImageSlider",
+    "FlexiPageUrl": "TestImageSlider",
+    "AppStoreName": "Image Slider",
+    "ContentElementTitle": "Image Slider Content Element",
+    "ImageData": {
+      "ImageData1": {
+        "Title": "Sea",
+        "TitleColor": null,
+        "Subtitle": "Sea 1",
+        "SubtitleColor": null,
+        "ButtonText": "Go to login",
+        "ButtonTextColor": null,
+        "ButtonLinks": {
+          "Internal": "login",
+          "External": "https:\\\\www.google.co.in",
+          "None": null
+        },
+        "ButtonLinkType": 0,
+        "ImagePath": "/content/files/images/model.jpg",
+        "NavigationLinks": {
+          "Internal": "login",
+          "External": "https:\\\\www.google.co.in",
+          "None": null
+        },
+        "NavigationLinkType": 1
+      },
+      "ImageData2": {
+        "Title": "Desert",
+        "TitleColor": null,
+        "Subtitle": "Desert 2",
+        "SubtitleColor": null,
+        "ButtonText": "Go to home",
+        "ButtonTextColor": null,
+        "ButtonLinks": {
+          "Internal": "home",
+          "External": "https:\\\\www.google.co.in",
+          "None": null
+        },
+        "ButtonLinkType": 0,
+        "ImagePath": "/content/files/images/homepage-banner.jpg",
+        "NavigationLinks": {
+          "Internal": "home",
+          "External": "mailchimp.com",
+          "None": null
+        },
+        "NavigationLinkType": 1
+      },
+      "ImageData3": {
+        "Title": "Forest",
+        "TitleColor": null,
+        "Subtitle": "Forest 3",
+        "SubtitleColor": null,
+        "ButtonText": "Go to contact us",
+        "ButtonTextColor": null,
+        "ButtonLinks": {
+          "Internal": "contact-us",
+          "External": "mailchimp.com",
+          "None": null
+        },
+        "ButtonLinkType": 0,
+        "ImagePath": "/content/files/images/model.jpg",
+        "NavigationLinks": {
+          "Internal": "contact-us",
+          "External": "https:\\\\www.facebook.com/",
+          "None": null
+        },
+        "NavigationLinkType": 1
+      },
+      "ImageData4": {
+        "Title": "City",
+        "TitleColor": null,
+        "Subtitle": "City 4",
+        "SubtitleColor": null,
+        "ButtonText": "Go to new account",
+        "ButtonTextColor": null,
+        "ButtonLinks": {
+          "Internal": "home",
+          "External": "mailchimp.com",
+          "None": null
+        },
+        "ButtonLinkType": 0,
+        "ImagePath": "/content/files/images/homepage-banner.jpg",
+        "NavigationLinks": {
+          "Internal": "home",
+          "External": "https:\\\\en.oxforddictionaries.com/",
+          "None": null
+        },
+        "NavigationLinkType": 1
+      }
+    },
+    "NavigationButtons": {
+      "ShowNavigation": {
+        "true": true,
+        "false": false
+      },
+      "PreviousIcon": "/content/files/content/imageslider/previous-default.png",
+      "NextIcon": "/content/files/content/imageslider/next-default.png"
+    },
+    "DotNavigator": {
+      "DisplayDotNavigator": true,
+      "NavigatorIconPath": "/content/files/content/imageslider/navigator-default.png",
+      "HoverNavigatorIconPath": "/content/files/content/imageslider/navigator-hover-default.png",
+      "HeightOfTheIcon": 13,
+      "InvalidHeightOfTheIcon": 100,
+      "InvalidHeightOfTheIconError": "Please enter a value between 1 and 99",
+      "WidthOfTheIcon": 13,
+      "InvalidWidthOfTheIcon": 3601,
+      "InvalidWidthOfTheIconError": "Please enter a value between 1 and 99",
+      "DisplayNavigatorInsideSlider": false
+    },
+    "HeightType": {
+      "ExpandTheSlider": 0,
+      "Fixed": 1
+    },
+    "HeightInDesktop": 600,
+    "InvalidHeightInDesktop": 10000,
+    "InvalidHeightInDesktopError": "Please enter a value between 0 and 9999",
+    "HeightInTablet": 500,
+    "InvalidHeightInTablet": 10000,
+    "InvalidHeightInTabletError": "Please enter a value between 0 and 9999",
+    "HeightInMobile": 400,
+    "InvalidHeightInMobile": 10000,
+    "InvalidHeightInMobileError": "Please enter a value between 0 and 9999",
+    "WidthInPage": 1000,
+    "InvalidSpace": "Please enter a value between 0 and 9999",
+    "MiscellaneousSettings": {
+      "InvertedLogo": {
+        "None": null,
+        "Logo": "/content/files/images/newzealand.png"
+      },
+      "ImageTransformAs": {
+        "Slide": 0,
+        "Fade": 1
+      },
+      "ExpandSliderToWidthOfBrowser": {
+        "true": true,
+        "false": false
+      },
+      "ExpandImageToWidthOfPage": {
+        "true": true,
+        "false": false
+      },
+      "FadeImage": "ISFade",
+      "NumberOfImagesToDisplayOne": 1,
+      "NumberOfImagesToDisplayMoreThanOne": 2,
+      "SpaceBetweenImagesZero": 0,
+      "SpaceBetweenImagesMoreThanZero": "8px",
+      "InvalidSpaceBetweenImages": 101,
+      "InvalidSpaceBetweenImagesError": "Please enter a value between 0 and 100"
+    },
+    "OtherData": {
+      "ImageCountData": {
+        "ImageCount1": 1,
+        "ImageCount2": 2,
+        "ImageCount3": 3,
+        "ImageCount4": 4
+      },
+      "Positions": {
+        "Position0": 0,
+        "Position1": 1,
+        "Position2": 2,
+        "Position3": 3,
+        "Position4": 4
+      }
+    },
+    "FadeClass": "lSFade",
+    "ProductPage": {
+      "Url": "touring-bicycle-1001",
+      "ProductNo": 1001
+    },
+    "ProductListPage": {
+      "Url": "category-4",
+      "ProductTitle": "Category 4"
+    },
+    "LoginPageUrl": "/profile/login",
+    "LoginPageTitle": "Login | Sana Store",
+    "RegistrationPageUrl": "/profile/register",
+    "MyaccountLoggingUrl": "/profile/login",
+    "MyaccountDashboardPageUrl": "/profile",
+    "MyaccountPageUrl": "/profile/orders",
+    "RegistrationPageTitle": "Creating a new account | Sana Store",
+    "MyAccountPageTitle": "My Account | Sana Store",
+    "Orderhistory": "Order history | Sana Store",
+    "MyQuotehistory": "Quotes history | Sana Store",
+    "InventoryHistory": "Invoices history | Sana Store",
+    "ReturnOrderHistory": "Return order history | Sana Store",
+    "ReturnReceiptsHistory": "Return receipts history | Sana Store",
+    "CreditNoteHistory": "Credit notes history | Sana Store",
+    "ShipmentStoreHistory": "Shipments history | Sana Store",
+    "BasketPageTitle": "Shopping cart | Sana Store",
+    "BasketPageUrl": "shop/basket",
+    "CheckOutPageUrl": "/en-us/checkout/orderaddress",
+    "CheckoutpageTitle": "Sana Store",
+    "MyorderTemplateTitle": "Sana Store",
+    "OrderhistoryUrl": "/profile/orders"
+  }
+}

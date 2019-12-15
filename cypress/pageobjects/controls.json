@@ -1,0 +1,48 @@
+{
+  "SearchBox": {
+    "DefaultSearch": ".filter-box .search",
+    "Opener": ".filter-box .dropdown-toggle",
+    "SearchByTitle": ".filter-box input[name$='Title']",
+    "SearchByEmail": ".filter-box input[name$='Email']",
+    "SearchByAlias": ".filter-box input[name=\"Url\"]",
+    "SearchByName": ".filter-box input[name$='Name']",
+    "SearchDropdownButton": ".filter-box .input-group-btn",
+    "SearchByUrl": ".filter-box input[name=\"Url\"]",
+    "DateFrom": ".filter-box input[name=\"ItemDate.From\"]",
+    "DateTo": ".filter-box input[name=\"ItemDate.To\"]",
+    "SearchButton": ".filter-box .btn-primary[type=\"Submit\"]",
+    "DeleteFilterButton": ".filter-box .filters a",
+    "DeleteButton": ".filter-box .btn-delete"
+  },
+  "Table": {
+    "BatchActionDropdown": {
+      "Opener": ".table-sana .grid-batch .dropdown-toggle",
+      "SelectAll": ".table-sana .grid-batch a[data-action=\"select\"]",
+      "DeselectAll": ".table-sana .grid-batch a[data-action=\"deselect\"]",
+      "DeleteSelectedItems": ".table-sana .grid-batch a[data-action=\"delete\"]"
+    },
+    "Lines(List)": "tbody tr"
+  },
+  "Selected": "input[type=\"checkbox\"]",
+  "Name": ".col-name",
+  "Email": ".col-email",
+  "Title": ".col-title p",
+  "Alias": ".col-url",
+  "Url": ".col-url",
+  "ItemNo": ".col-productid",
+  "Link": ".col-linkdata",
+  "NewsItemDate": ".col-itemdate",
+  "DateCreated": ".col-createddate",
+  "DateModified": ".col-modifieddate",
+  "SelectLine": "input[type=\"checkbox\"]",
+  "FilterExpression": ".col-filter p",
+  "PermanentCheckbox": ".col-permanent input[type=\"checkbox\"]",
+  "EditButton": ".btn-edit",
+  "DeleteButton": ".btn-delete",
+  "ExtraActionDropdown": {
+    "Opener": ".extra-actions .dropdown-toggle",
+    "ViewPage": ".extra-actions li:nth-child(1) a",
+    "Duplicate": ".extra-actions li:nth-child(2) a",
+    "SetAsHomePage": ".extra-actions li:nth-child(3) a"
+  }
+}
