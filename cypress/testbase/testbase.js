@@ -7,7 +7,13 @@ export function IOpen(url)
     else
         cy.visit(Cypress.config().baseUrl + url)
 }
-
+export function Open(url)
+{
+    if(url.includes("https://"))
+        cy.visit(url)
+    else if(url.toLocaleLowerCase().includes("admin"))
+        cy.visit(Cypress.config().baseUrl+"/" + url)
+}
 export function Click(locator)
 {
     if(locator.includes('//'))
