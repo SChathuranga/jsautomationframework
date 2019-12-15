@@ -1,5 +1,7 @@
 const Testdata = require('../../testdata/testdata.json')
 const Controls = require('../pageobjects/controls.json')
+const Admin = require('../pageobjects/AdminPages.json')
+
 export function IOpen(url)
 {
     if(url.includes("https://"))
@@ -125,15 +127,23 @@ export function DeleteWebPageIfItExists(flexiPageUrl)
     })
 }
 
+export function RefreshSiteCache()
+{
+    I.Open(Admin_HomePage);
+    I.LoginToAdminIfNeeded();
+    I.Click(Admin.Layout.Tools.Opener);
+    I.Click(Admin.Layout.Tools.RefreshSiteCache);
+}
+
 export function PrepareFlexiPageForCheck(flexiPageTitle, flexiPageUrl, withSave=true)
 {
-    I.DeleteWebPageIfItExists(Admin_FlexiPage.SearchBox, Admin_FlexiPage.Table, flexiPageUrl);
+    I.DeleteWebPageIfItExists(Admin.FlexiPage.SearchBox, Admin.FlexiPage.Table, flexiPageUrl);
     I.RemoveUrlRedirectIfItExists(flexiPageUrl);
-    I.Open(Admin_CreateFlexiPage);
-    I.Fill(Admin_CreateFlexiPage.Title, flexiPageTitle);
-    I.Fill(Admin_CreateFlexiPage.UrlField, flexiPageUrl);
+    I.Open(Admin.CreateFlexiPage);
+    I.Fill(Admin.CreateFlexiPage.Title, flexiPageTitle);
+    I.Fill(Admin.CreateFlexiPage.UrlField, flexiPageUrl);
     if (withSave)
-        I.Click(Admin_CreateFlexiPage.SaveChangesButton);
+        I.Click(Admin.CreateFlexiPage.SaveChangesButton);
 }
 
 export function SearchAdminWebPage()

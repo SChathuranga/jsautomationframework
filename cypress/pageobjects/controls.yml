@@ -13,10 +13,10 @@ SearchBox:
  DeleteFilterButton: .filter-box .filters a
  DeleteButton: .filter-box .btn-delete
 Table:
- BatchActionDropdown: 
+ BatchActionDropdown:
   Opener: .table-sana .grid-batch .dropdown-toggle
-	SelectAll: .table-sana .grid-batch a[data-action="select"]
-	DeselectAll: .table-sana .grid-batch a[data-action="deselect"]
+  SelectAll: .table-sana .grid-batch a[data-action="select"]
+  DeselectAll: .table-sana .grid-batch a[data-action="deselect"]
   DeleteSelectedItems: .table-sana .grid-batch a[data-action="delete"]
  Lines(List): tbody tr
 	Selected: input[type="checkbox"]
@@ -35,8 +35,9 @@ Table:
 	PermanentCheckbox: .col-permanent input[type="checkbox"]
 	EditButton: .btn-edit
 	DeleteButton: .btn-delete
-	ExtraActionDropdown: .extra-actions 
-	 Opener: .dropdown-toggle
-	 ViewPage: li:nth-child(1) a
-	 Duplicate: li:nth-child(2) a
-	 SetAsHomePage: li:nth-child(3) a
+	ExtraActionDropdown:
+   Opener: .extra-actions .dropdown-toggle
+   ViewPage: .extra-actions li:nth-child(1) a
+   Duplicate: .extra-actions li:nth-child(2) a
+   SetAsHomePage: .extra-actions li:nth-child(3) a
+
