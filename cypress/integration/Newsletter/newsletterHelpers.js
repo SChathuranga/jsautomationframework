@@ -24,5 +24,4 @@ export function I_AddNewsletterContentBlockToFlexiPage()
     I.Fill(Admin_EditFlexiPage.Newsletter.SubscribeButtonText, TestData.Addons.Newsletter.GeneralSettings.SubscribeButtonText);
     I.Clear(Admin_EditFlexiPage.Newsletter.BackgroundColor);
     I.Fill(Admin_EditFlexiPage.Newsletter.BackgroundColor, TestData.Addons.Newsletter.BackgroundSettings.BackgroundColor);
-    I.Fill(Addons.Newsletter.FlexiPageTitle)
 }

@@ -70,7 +70,7 @@ EditFlexiPage:
   	Items(List): .content-blocks-editor .add-new ul li
   	 Value: a
   	AddOnDisableLabel: .content-blocks-editor .add-new a[href="#TwitterFeed"] i
-  Elements(List): .content-blocks-editor .panel-expander
+  Elements(List): #.content-blocks-editor .panel-expander
    TextArea: .fr-element
    DeleteButton: .btn-delete
    SettingsButton: .btn-settings
