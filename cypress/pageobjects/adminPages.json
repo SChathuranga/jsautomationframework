@@ -143,6 +143,9 @@
     "MetaTitle": ".nav-tabs input[name=MetaTitle]",
     "MetaDescription": "#MetaDescription"
   },
+  "HomePage": {
+    "Url": null
+  },
   "Layout": {
     "LogoutLink": ".btn-logout",
     "Tools": {

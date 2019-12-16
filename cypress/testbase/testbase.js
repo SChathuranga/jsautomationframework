@@ -117,41 +117,41 @@ export function Select(locator, option)
 
 export function LoginToAdminIfNeeded()
 {
-    cy.get('btn-logout').then(($logout) => {
-        if($logout.is(':visible'))
-            return;
-        else
-        {
-            cy.visit('https://automation9351.azurewebsites.net/admin');
-            cy.get('.row-email input').type(Testdata.Admin.Users.SysAdmin.TestUserEmail);
-            cy.get('.row-password input').type(Testdata.Admin.Users.SysAdmin.TestUserPassword);
-            cy.get('btn-login').click();
-        }
-    })
+    cy.visit(Cypress.config().baseUrl + "/admin");
+    cy.get('.row-email input').type(Testdata.Admin.Users.SysAdmin.TestUserEmail);
+    cy.get('.row-password input').type(Testdata.Admin.Users.SysAdmin.TestUserPassword);
+    cy.get('.btn-login').click();
 }
 
 export function DeleteWebPageIfItExists(flexiPageUrl)
 {
-    cy.get(Controls.SearchBox.Opener).then(($opener) => {
-        if($opener.is(':visible'))
-        {
-            I.Click(Controls.SearchBox.Opener);
-            I.Fill(Controls.SearchBox.SearchByUrl, flexiPageUrl);
-            I.Click(Controls.SearchBox.SearchButton);
-        }
-        else
-        {
-            I.Fill(Controls.SearchBox.SearchByUrl, flexiPageUrl);
-            I.Press(Keys.Enter);
-        }
-        
-        if (table.Lines.Count > 0)
-        {
-            I.Click(Controls.Table.Lines.First().DeleteButton);
-            I.Click(AllPages.Admin.Layout.Confirmation.Confirm);
-            I.RefreshSiteCache();
-        }
+    I.Fill(Controls.SearchBox.SearchByUrl, flexiPageUrl);
+    //I.Click(Controls.SearchBox.Opener);
+    cy.wait(500);
+    
+    cy.get('iframe')
+    .then(function ($newframe) {
+        const $body = $newframe.contents().find('body')
+    
+        cy
+          .wrap($body)
+          .find(Controls.SearchBox.SearchByUrl)
+          .type(flexiPageUrl)
+
+        cy
+            .wrap($body)
+            .find(Controls.SearchBox.SearchButton)
+            .click()
     })
+
+    //I.Fill(Controls.SearchBox.SearchByUrl, flexiPageUrl);
+    //I.Click(Controls.SearchBox.SearchButton);
+    if (Controls.Table.Lines.Count > 0)
+    {
+        I.Click(Controls.Table.Line.DeleteButton);
+        I.Click(AllPages.Admin.Layout.Confirmation.Confirm);
+        I.RefreshSiteCache();
+    }
 }
 
 export function RefreshSiteCache()
@@ -222,4 +222,9 @@ export function Clear(locator)
         cy.xpath(locator).clear();
     else
         cy.get(locator).clear();
+}
+
+export function SeeInTitle(pageTitle)
+{
+    cy.title().should('eq', pageTitle);
 }

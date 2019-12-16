@@ -6,6 +6,7 @@ export function I_AddNewsletterContentBlockToFlexiPage()
 {
     I.Open("Admin_FlexiPage", " ");
     I.LoginToAdminIfNeeded();
+    I.Open("Admin_FlexiPage", " ");
     I.PrepareFlexiPageForCheck(Testdata.Addons.Newsletter.FlexiPageTitle, Testdata.Addons.Newsletter.FlexiPageUrl);
     I.SearchAdminWebPage(Admin.FlexiPage.SearchBox, Testdata.Addons.Newsletter.FlexiPageUrl);
     I.Click(Admin.FlexiPage.Table.Lines.EditButton);

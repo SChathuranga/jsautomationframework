@@ -21,7 +21,8 @@
       "DeselectAll": ".table-sana .grid-batch a[data-action=\"deselect\"]",
       "DeleteSelectedItems": ".table-sana .grid-batch a[data-action=\"delete\"]"
     },
-    "Lines(List)": "tbody tr"
+    "Lines": ".table-sana tbody tr",
+    "Line": null
   },
   "Selected": "input[type=\"checkbox\"]",
   "Name": ".col-name",
@@ -38,7 +39,7 @@
   "FilterExpression": ".col-filter p",
   "PermanentCheckbox": ".col-permanent input[type=\"checkbox\"]",
   "EditButton": ".btn-edit",
-  "DeleteButton": ".btn-delete",
+  "DeleteButton": ".table-sana tbody tr:nth-of-type(1) .btn-delete",
   "ExtraActionDropdown": {
     "Opener": ".extra-actions .dropdown-toggle",
     "ViewPage": ".extra-actions li:nth-child(1) a",
