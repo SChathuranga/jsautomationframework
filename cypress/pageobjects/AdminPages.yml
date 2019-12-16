@@ -60,6 +60,7 @@ EditFlexiPage:
    BackgroundImageValidation: .content-blocks-editor .row-backgroundimage .field-validation-error span
    DisplayFullWidthToggleButton: .content-blocks-editor .row-fullwidth i
    AdminPageLable: .content-blocks-editor a:contains(Newsletter)
+   ContentBlock: .content-blocks-editor
  ContentElements:
   AddElement:
     Opener: .content-blocks-editor .add-new button

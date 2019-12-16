@@ -22,7 +22,7 @@ export function Open(pagetype, url)
     }
     else if(pagetype.toLocaleLowerCase().includes("home"))
         cy.visit(Cypress.config().baseUrl);
-    else
+    else if(pagetype.includes("FlexiPage"))
         cy.visit(Cypress.config().baseUrl + "/" + url);
 }
 
@@ -164,7 +164,7 @@ export function RefreshSiteCache()
 
 export function PrepareFlexiPageForCheck(flexiPageTitle, flexiPageUrl, withSave=true)
 {
-    I.DeleteWebPageIfItExists(Admin.FlexiPage.SearchBox, Admin.FlexiPage.Table, flexiPageUrl);
+    //I.DeleteWebPageIfItExists(Admin.FlexiPage.SearchBox, Admin.FlexiPage.Table, flexiPageUrl);
     //I.RemoveUrlRedirectIfItExists(flexiPageUrl);
     I.Open("Admin_CreateFlexiPage", "");
     I.Fill(Admin.CreateFlexiPage.Title, flexiPageTitle);

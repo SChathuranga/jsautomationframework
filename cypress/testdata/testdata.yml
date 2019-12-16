@@ -1275,12 +1275,12 @@ Addons:
   GeneralSettings:
     Title: Newsletter
     Subtitle: Subscribe to our newsletter
-    TitleColor: #f6eaea
-    SubtitleColor: #f6eaea
+    TitleColor: "#f6eaea"
+    SubtitleColor: "#f6eaea"
     EmailFieldText: Email address
     SubscribeButtonText: Subscribe!
   BackgroundSettings:
-    BackgroundColor: #474242
+    BackgroundColor: "#474242"
     BackgroundImage: /content/files/images/Newsletter/bg-newsletter.jpg
   Email: c.jayasinghe@sana-commerce.com
   ProductNo: 70000
