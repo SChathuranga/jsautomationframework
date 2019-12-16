@@ -1,17 +1,18 @@
 const Testdata = require('../../testdata/testdata.json')
 const I = require('../../testbase/testbase')
+const Admin = require('../../pageobjects/adminPages.json')
 
 export function I_AddNewsletterContentBlockToFlexiPage()
 {
-    I.Open(Admin_FlexiPage);
+    I.Open("Admin_FlexiPage", " ");
     I.LoginToAdminIfNeeded();
     I.PrepareFlexiPageForCheck(Testdata.Addons.Newsletter.FlexiPageTitle, Testdata.Addons.Newsletter.FlexiPageUrl);
     I.SearchAdminWebPage(Admin.FlexiPage.SearchBox, Testdata.Addons.Newsletter.FlexiPageUrl);
-    I.Click(Admin.FlexiPage.Table.Lines[0].EditButton);
+    I.Click(Admin.FlexiPage.Table.Lines.EditButton);
     I.AmOn(Admin.EditFlexiPage);
     I.Click(Admin.EditFlexiPage.ContentElements.AddElement.Opener);
     I.Click(Admin.EditFlexiPage.ContentElements.AddElement.Items[Newsletter]);
-    I.See(Admin.EditFlexiPage.Newsletter);
+    I.See(Admin.EditFlexiPage.Newsletter.ContentBlock);
     I.Fill(Admin.EditFlexiPage.Newsletter.Title, Testdata.Addons.Newsletter.GeneralSettings.Title);
     I.Clear(Admin.EditFlexiPage.Newsletter.TitleColor);
     I.Fill(Admin.EditFlexiPage.Newsletter.TitleColor, Testdata.Addons.Newsletter.GeneralSettings.TitleColor);

@@ -2,21 +2,41 @@ const Testdata = require('../testdata/testdata.json')
 const Controls = require('../pageobjects/controls.json')
 const Admin = require('../pageobjects/adminPages.json')
 const Keys = require('../support/keys.json')
+const I = require('../testbase/testbase')
 
 export function IOpen(url)
-{
-    if(url.includes("https://"))
-        cy.visit(url)
-    else
-        cy.visit(Cypress.config().baseUrl + url)
-}
-export function Open(url)
 {
     if(url.includes("https://"))
         cy.visit(url)
     else if(url.toLocaleLowerCase().includes("admin"))
         cy.visit(Cypress.config().baseUrl+"/" + url)
 }
+
+export function Open(pagetype, url)
+{
+    if(url.includes("https://"))
+        cy.visit(url);
+    else if(pagetype.includes("Admin_"))
+    {
+        cy.visit(Cypress.config().baseUrl + "/admin/" + AdminPagesMapping(pagetype));
+    }
+    else if(pagetype.toLocaleLowerCase().includes("home"))
+        cy.visit(Cypress.config().baseUrl);
+    else
+        cy.visit(Cypress.config().baseUrl + "/" + url);
+}
+
+export function AdminPagesMapping(pageName)
+{
+    switch(pageName)
+    {
+        case "Admin_FlexiPage":
+            return Admin.FlexiPage.Url;
+        case "Admin_CreateFlexiPage":
+            return Admin.CreateFlexiPage.Url;
+    }
+}
+
 export function Click(locator)
 {
     if(locator.includes('//'))
@@ -112,7 +132,7 @@ export function LoginToAdminIfNeeded()
 
 export function DeleteWebPageIfItExists(flexiPageUrl)
 {
-    cy.get(searchBox.Opener).then(($opener) => {
+    cy.get(Controls.SearchBox.Opener).then(($opener) => {
         if($opener.is(':visible'))
         {
             I.Click(Controls.SearchBox.Opener);
@@ -145,8 +165,8 @@ export function RefreshSiteCache()
 export function PrepareFlexiPageForCheck(flexiPageTitle, flexiPageUrl, withSave=true)
 {
     I.DeleteWebPageIfItExists(Admin.FlexiPage.SearchBox, Admin.FlexiPage.Table, flexiPageUrl);
-    I.RemoveUrlRedirectIfItExists(flexiPageUrl);
-    I.Open(Admin.CreateFlexiPage);
+    //I.RemoveUrlRedirectIfItExists(flexiPageUrl);
+    I.Open("Admin_CreateFlexiPage", "");
     I.Fill(Admin.CreateFlexiPage.Title, flexiPageTitle);
     I.Fill(Admin.CreateFlexiPage.UrlField, flexiPageUrl);
     if (withSave)
@@ -155,7 +175,7 @@ export function PrepareFlexiPageForCheck(flexiPageTitle, flexiPageUrl, withSave=
 
 export function SearchAdminWebPage(flexiPageUrl)
 {
-    cy.get(searchBox.Opener).then(($opener) => {
+    cy.get(Controls.SearchBox.Opener).then(($opener) => {
         if($opener.is(':visible'))
         {
             I.Click(Controls.SearchBox.Opener);

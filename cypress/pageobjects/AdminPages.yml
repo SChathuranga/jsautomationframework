@@ -21,7 +21,7 @@ FlexiPage:
    SelectAll: .table-sana .grid-batch a[data-action="select"]
    DeselectAll: .table-sana .grid-batch a[data-action="deselect"]
    DeleteSelectedItems: .table-sana .grid-batch a[data-action="delete"]
-  Lines(List):
+  Lines:
    Selected: input[type="checkbox"]
    Name: .col-name
    Email: .col-email
@@ -36,7 +36,7 @@ FlexiPage:
    SelectLine: input[type="checkbox"]
    FilterExpression: .col-filter p
    PermanentCheckbox: .col-permanent input[type="checkbox"]
-   EditButton: .btn-edit
+   EditButton: .table-sana tbody tr[0] .btn-edit
    DeleteButton: .btn-delete
    ExtraActionDropdown:
     Opener: .extra-actions .dropdown-toggle
@@ -45,7 +45,8 @@ FlexiPage:
     SetAsHomePage: .extra-actions li:nth-child(3) a
 
 EditFlexiPage:
- NewsletterContentBlock:
+ Identifier: flexipages-edit-page 
+ Newsletter:
    Title: .newsletter-block .form-row.row-email h2
    Subtitle: .newsletter-block .form-row.row-email p
    Email: .newsletter-block #email
