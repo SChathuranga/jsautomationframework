@@ -52,17 +52,20 @@
   },
   "EditFlexiPage": {
     "Identifier": "flexipages-edit-page",
-    "NewsletterContentBlock": {
-      "Title": ".newsletter-block .form-row.row-email h2",
-      "Subtitle": ".newsletter-block .form-row.row-email p",
-      "Email": ".newsletter-block",
-      "SubscribeButton": ".newsletter-block .newsletter-btn > button:nth-child(1)",
-      "FooterSubscribeButton": ".newsletter-block .newsletter-btn button span",
-      "EmailValidator": ".newsletter-block .field-validation-error",
-      "SubscribeSuccessMessage": ".newsletter-block .newsletter-block-content-below.show h2",
-      "DefaultNewsletterContent": ".newsletter-block .column.newsletter",
-      "ContentBlock": ".newsletter-block",
-      "CloseButton": ".newsletter-block body .ui-dialog-titlebar-close"
+    "Newsletter": {
+      "Title": ".content-blocks-editor .panel .form-group.row-title input",
+      "TitleColor": ".content-blocks-editor .panel .form-group.row-titlecolor input",
+      "Subtitle": ".content-blocks-editor .panel .form-group.row-subtitle input",
+      "SubtitleColor": ".content-blocks-editor .panel .form-group.row-subtitlecolor input",
+      "EmailFieldText": ".content-blocks-editor .panel .form-group.row-emailfieldtext input",
+      "SubscribeButtonText": ".content-blocks-editor .panel .form-group.row-subscribebuttontext input",
+      "BackgroundColor": ".content-blocks-editor .panel .form-group.row-backgroundcolor input",
+      "BackgroundImageToggleButton": ".content-blocks-editor .row-usebackgroundimage .toggler i",
+      "BackgroundImage": ".content-blocks-editor .panel .form-group.row-backgroundimage input",
+      "BackgroundColorValidation": ".content-blocks-editor .row-backgroundcolor .field-validation-error span",
+      "BackgroundImageValidation": ".content-blocks-editor .row-backgroundimage .field-validation-error span",
+      "DisplayFullWidthToggleButton": ".content-blocks-editor .row-fullwidth i",
+      "AdminPageLable": ".content-blocks-editor a:contains(Newsletter)"
     },
     "ContentElements": {
       "AddElement": {
@@ -75,6 +78,7 @@
         "ProductSetFilter": ".content-blocks-editor .add-new a[href=\"#ProductSetFilter\"]",
         "FullPageBanner": ".content-blocks-editor .add-new a[href=\"#MainBanner\"]",
         "Usp": ".content-blocks-editor .add-new a[href=\"#Usp\"]",
+        "Newsletter": ".content-blocks-editor .add-new a[href=\"#Newsletter\"]",
         "Items(List)": {
           "Value": ".content-blocks-editor .add-new ul li a"
         },
@@ -99,7 +103,19 @@
           "ContentVisibilityToDate": ".content-blocks-editor .staging-settings input[name*='EndDate']"
         }
       }
-    }
+    },
+    "SaveButton": ".btn-save",
+    "Header": null,
+    "Title": "input[name=Title]",
+    "UrlField": "input[name=Url]",
+    "TabSet": {
+      "Basics": ".nav-tabs a[href=\"#Tab_Basics\"]",
+      "Advanced": ".nav-tabs a[href=\"#Tab_Advanced\"]"
+    },
+    "MetaTitle": "input[name=MetaTitle]",
+    "MetaDescription": null,
+    "PreviewButton": ".btn-preview",
+    "CancelButton": ".btn-cancel"
   },
   "CreateFlexiPage": {
     "Url": "flexipages/create",

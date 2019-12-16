@@ -11,7 +11,7 @@ export function I_AddNewsletterContentBlockToFlexiPage()
     I.Click(Admin.FlexiPage.Table.Lines.EditButton);
     I.AmOn(Admin.EditFlexiPage);
     I.Click(Admin.EditFlexiPage.ContentElements.AddElement.Opener);
-    I.Click(Admin.EditFlexiPage.ContentElements.AddElement.Items[Newsletter]);
+    I.Click(Admin.EditFlexiPage.ContentElements.AddElement.Newsletter);
     I.See(Admin.EditFlexiPage.Newsletter.ContentBlock);
     I.Fill(Admin.EditFlexiPage.Newsletter.Title, Testdata.Addons.Newsletter.GeneralSettings.Title);
     I.Clear(Admin.EditFlexiPage.Newsletter.TitleColor);

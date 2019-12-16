@@ -156,7 +156,7 @@ export function DeleteWebPageIfItExists(flexiPageUrl)
 
 export function RefreshSiteCache()
 {
-    I.Open(Admin_HomePage);
+    I.Open("Admin_HomePage", "");
     I.LoginToAdminIfNeeded();
     I.Click(Admin.Layout.Tools.Opener);
     I.Click(Admin.Layout.Tools.RefreshSiteCache);

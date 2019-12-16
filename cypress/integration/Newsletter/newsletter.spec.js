@@ -2,6 +2,7 @@ const Pages = require('../../pageobjects/pages.json')
 const Testdata = require('../../testdata/testdata.json')
 const I = require('../../testbase/testbase')
 const FlexiPage = require('../../pageobjects/flexiPage.json')
+const Admin = require('../../pageobjects/adminPages.json')
 import { I_AddNewsletterContentBlockToFlexiPage } from '../Newsletter/newsletterHelpers'
 var baseUrl='https://automation9352.azurewebsites.net'
 
@@ -19,7 +20,7 @@ context('NewsletterCB', () => {
         //I.SeeText(Pages.HomePage.AccountMenu.Username, Testdata.B2BCustomer.Username)
 
         I_AddNewsletterContentBlockToFlexiPage();
-        I.Click(Admin_EditFlexiPage.SaveButton);
+        I.Click(Admin.EditFlexiPage.SaveButton);
         I.RefreshSiteCache();
         I.Open(FlexiPage, Testdata.Addons.Newsletter.FlexiPageUrl);
         I.SeeInTitle(Testdata.Addons.Newsletter.FlexiPageTitle);
