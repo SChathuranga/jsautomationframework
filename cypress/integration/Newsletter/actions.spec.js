@@ -13,7 +13,7 @@ context('Actions', () => {
     cy.get("#page-content  div iframe").then($element=> {
       const $body = $element.contents().find('body');
       let stripe = cy.wrap($body)
-      console.log( stripe.find('.btn-install').eq(0).click())
+      stripe.find('.btn-install').eq(0).click()
     })
   })
 })
