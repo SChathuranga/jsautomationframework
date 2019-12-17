@@ -3,5 +3,6 @@
     "viewportHeight": 1280,
     "reporter": "mochawesome",
 
-    "baseUrl": "https://automation9352.azurewebsites.net"
+    "baseUrl": "https://automation9352.azurewebsites.net",
+    "chromeWebSecurity": false
   }
