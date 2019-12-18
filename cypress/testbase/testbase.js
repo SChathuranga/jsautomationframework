@@ -1,3 +1,4 @@
+/// <reference types="Cypress" />
 const Testdata = require('../testdata/testdata.json')
 const Controls = require('../pageobjects/controls.json')
 const Admin = require('../pageobjects/adminPages.json')
@@ -125,46 +126,31 @@ export function LoginToAdminIfNeeded()
 
 export function DeleteWebPageIfItExists(flexiPageUrl)
 {
-    I.Fill(Controls.SearchBox.SearchByUrl, flexiPageUrl);
-    //I.Click(Controls.SearchBox.Opener);
-    cy.wait(500);
-    
-    cy.get('iframe')
-    .then(function ($newframe) {
-        const $body = $newframe.contents().find('body')
-    
-        cy
-          .wrap($body)
-          .find(Controls.SearchBox.SearchByUrl)
-          .type(flexiPageUrl)
-
-        cy
-            .wrap($body)
-            .find(Controls.SearchBox.SearchButton)
-            .click()
+    I.Click('.btn-invert');
+    I.Fill('.dropdown-menu > .form-group input', flexiPageUrl);
+    I.Click('.dropdown-menu > .buttons .btn-primary');
+    cy.get('body').then((body) => {
+        if(body.find('.table-sana tbody tr').length>0){
+            cy.get('.table-sana tbody tr').its('length').should('be.gte', 0);
+            cy.wait(500);
+            cy.get('.table-sana tbody tr td a[href="/admin/flexipages/delete"]').first().click({force: true});
+            cy.pause();
+            cy.get('.modal-footer > .btn-primary').click();
+        }
     })
-
-    //I.Fill(Controls.SearchBox.SearchByUrl, flexiPageUrl);
-    //I.Click(Controls.SearchBox.SearchButton);
-    if (Controls.Table.Lines.Count > 0)
-    {
-        I.Click(Controls.Table.Line.DeleteButton);
-        I.Click(AllPages.Admin.Layout.Confirmation.Confirm);
-        I.RefreshSiteCache();
-    }
 }
 
 export function RefreshSiteCache()
 {
-    I.Open("Admin_HomePage", "");
-    I.LoginToAdminIfNeeded();
-    I.Click(Admin.Layout.Tools.Opener);
+    //I.Open("Admin_HomePage", "");
+    //I.LoginToAdminIfNeeded();
+    I.Click('.navbar .navbar-right #toolsmenu .dropdown-toggle');
     I.Click(Admin.Layout.Tools.RefreshSiteCache);
 }
 
 export function PrepareFlexiPageForCheck(flexiPageTitle, flexiPageUrl, withSave=true)
 {
-    //I.DeleteWebPageIfItExists(Admin.FlexiPage.SearchBox, Admin.FlexiPage.Table, flexiPageUrl);
+    I.DeleteWebPageIfItExists(flexiPageUrl);
     //I.RemoveUrlRedirectIfItExists(flexiPageUrl);
     I.Open("Admin_CreateFlexiPage", "");
     I.Fill(Admin.CreateFlexiPage.Title, flexiPageTitle);
@@ -226,5 +212,14 @@ export function Clear(locator)
 
 export function SeeInTitle(pageTitle)
 {
-    cy.title().should('eq', pageTitle);
+    cy.title().should('contain', pageTitle);
+}
+
+export function GetIFrameElement(selector, elementLocator)
+{
+    cy.get("#page-content  div iframe").then($element=> {
+        const $body = $element.contents().find('body');
+        let stripe = cy.wrap($body)
+        stripe.find('.btn-install').eq(0)
+    })
 }

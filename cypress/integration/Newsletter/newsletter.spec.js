@@ -8,9 +8,10 @@ import { I_AddNewsletterContentBlockToFlexiPage } from '../Newsletter/newsletter
 context('NewsletterCB', () => {
     it('Newsletter_ViewNewsletter_OnFlexiPage', () => {
         I_AddNewsletterContentBlockToFlexiPage();
+        //I.Click(Admin.EditFlexiPage.SaveButton);
         cy.pause();
-        I.Click(Admin.EditFlexiPage.SaveButton);
         I.RefreshSiteCache();
+        cy.wait(1000);
         I.Open("FlexiPage", Testdata.Addons.Newsletter.FlexiPageUrl);
         I.SeeInTitle(Testdata.Addons.Newsletter.FlexiPageTitle);
         I.See(FlexiPage.NewsletterContentBlock.ContentBlock);
