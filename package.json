@@ -1,13 +1,13 @@
 {
   "name": "cypresstestproject",
   "version": "1.0.0",
-  "description": "",
+  "description": "cypress based test automation framework that aligns with the test scripting syntax of Sana Commerce test automation framework",
   "main": "index.js",
   "scripts": {
     "pretest": "node customtool.js",
     "test": "npx cypress open"
   },
-  "author": "chathuranga",
+  "author": "Chathuranga",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^3.7.0",
@@ -16,6 +16,7 @@
     "mochawesome": "^4.1.0"
   },
   "dependencies": {
-    "npm": "^6.13.1"
+    "mocha": "^6.2.2",
+    "npm": "^6.13.4"
   }
 }
