@@ -10,6 +10,7 @@ context('NewsletterCB', () => {
         I_AddNewsletterContentBlockToFlexiPage();
         I.Click(Admin.EditFlexiPage.SaveButton);
         I.RefreshSiteCache();
+        I.Wait(500);
         I.Open("FlexiPage", Testdata.Addons.Newsletter.FlexiPageUrl);
         I.SeeInTitle(Testdata.Addons.Newsletter.FlexiPageTitle);
         I.See(FlexiPage.NewsletterContentBlock.ContentBlock);

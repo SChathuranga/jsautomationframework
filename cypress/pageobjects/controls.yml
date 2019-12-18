@@ -1,15 +1,15 @@
 SearchBox:
  DefaultSearch: .filter-box .search
- Opener: .filter-box .dropdown-toggle
+ Opener: .btn-invert
  SearchByTitle: .filter-box input[name$='Title']
  SearchByEmail: .filter-box input[name$='Email']
  SearchByAlias: .filter-box input[name="Url"]
  SearchByName: .filter-box input[name$='Name']
  SearchDropdownButton: .filter-box .input-group-btn
- SearchByUrl: .filter-box input[name="Url"]
+ SearchByUrl: .dropdown-menu > .form-group input
  DateFrom: .filter-box input[name="ItemDate.From"]
  DateTo: .filter-box input[name="ItemDate.To"]
- SearchButton: .filter-box .btn-primary[type="Submit"]
+ SearchButton: .dropdown-menu > .buttons .btn-primary
  DeleteFilterButton: .filter-box .filters a
  DeleteButton: .filter-box .btn-delete
 Table:
@@ -20,23 +20,23 @@ Table:
   DeleteSelectedItems: .table-sana .grid-batch a[data-action="delete"]
  Lines: .table-sana tbody tr 
  Line:
-	Selected: input[type="checkbox"]
-	Name: .col-name
-	Email: .col-email
-	Title: .col-title p
-	Alias: .col-url
-	Url: .col-url
-	ItemNo: .col-productid
-	Link: .col-linkdata
-	NewsItemDate: .col-itemdate
-	DateCreated: .col-createddate
-	DateModified: .col-modifieddate
-	SelectLine: input[type="checkbox"]
-	FilterExpression: .col-filter p
-	PermanentCheckbox: .col-permanent input[type="checkbox"]
-	EditButton: .btn-edit
-	DeleteButton: .table-sana tbody tr:nth-of-type(1) .btn-delete
-	ExtraActionDropdown:
+  Selected: input[type="checkbox"]
+  Name: .col-name
+  Email: .col-email
+  Title: .col-title p
+  Alias: .col-url
+  Url: .col-url
+  ItemNo: .col-productid
+  Link: .col-linkdata
+  NewsItemDate: .col-itemdate
+  DateCreated: .col-createddate
+  DateModified: .col-modifieddate
+  SelectLine: input[type="checkbox"]
+  FilterExpression: .col-filter p
+  PermanentCheckbox: .col-permanent input[type="checkbox"]
+  EditButton: .table-sana tbody tr td .btn-edit
+  DeleteButton: .table-sana tbody tr td a[href="/admin/flexipages/delete"]
+  ExtraActionDropdown:
    Opener: .extra-actions .dropdown-toggle
    ViewPage: .extra-actions li:nth-child(1) a
    Duplicate: .extra-actions li:nth-child(2) a

@@ -1,6 +1,7 @@
 {
   "FlexiPage": {
     "Url": "flexipages",
+    "Identifier": "flexipages-index-page",
     "NewItemButton": ".btn-add",
     "SearchBox": {
       "DefaultSearch": ".filter-box .search",
@@ -24,7 +25,8 @@
         "DeselectAll": ".table-sana .grid-batch a[data-action=\"deselect\"]",
         "DeleteSelectedItems": ".table-sana .grid-batch a[data-action=\"delete\"]"
       },
-      "Lines": {
+      "Lines": ".table-sana tbody tr",
+      "Line": {
         "Selected": "input[type=\"checkbox\"]",
         "Name": ".col-name",
         "Email": ".col-email",
@@ -39,8 +41,8 @@
         "SelectLine": "input[type=\"checkbox\"]",
         "FilterExpression": ".col-filter p",
         "PermanentCheckbox": ".col-permanent input[type=\"checkbox\"]",
-        "EditButton": ".table-sana tbody tr[0] .btn-edit",
-        "DeleteButton": ".btn-delete",
+        "EditButton": ".table-sana tbody tr td .btn-edit",
+        "DeleteButton": ".table-sana tbody tr td a[href=\"/admin/flexipages/delete\"]",
         "ExtraActionDropdown": {
           "Opener": ".extra-actions .dropdown-toggle",
           "ViewPage": ".extra-actions li:nth-child(1) a",
@@ -120,6 +122,7 @@
   },
   "CreateFlexiPage": {
     "Url": "flexipages/create",
+    "Identifier": "flexipages-create-page",
     "Title": "input[name=Title]",
     "UrlField": "input[name=Url]",
     "PreviewButton": ".btn-preview",
@@ -146,13 +149,14 @@
   },
   "HomePage": {
     "Url": "/admin",
+    "Identifier": "home-index-page",
     "LogoutButton": ".btn-logout"
   },
   "Layout": {
     "LogoutLink": ".btn-logout",
     "Tools": {
       "ToolsMenu": "#toolsmenu",
-      "Opener": ".dropdown-toggle",
+      "Opener": ".navbar .navbar-right #toolsmenu .dropdown-toggle",
       "UserManagement": "a[href$=\"users\"]",
       "ErpConnection": "a[href$=\"connection\"]",
       "ServerManagement": "a[href$=\"servers\"]",
@@ -169,7 +173,7 @@
       "RefreshErpData": "button[data-href$=\"actions/refresherpcache\"]"
     },
     "Confirmation": {
-      "Confirm": "\\#confirmModal .modal-content .modal-footer .btn-confirm-ok",
+      "Confirm": ".modal-footer > .btn-primary",
       "Cancel": "\\#confirmModal .modal-content .modal-footer .btn[data-dismiss=\"modal\"]"
     },
     "UnsavedChangesDialog": {
@@ -257,8 +261,16 @@
   },
   "LoginPage": {
     "Url": "/login",
+    "Identifier": "profile-login-page",
     "Email": ".row-email input",
     "Password": ".row-password input",
     "LoginButton": ".btn-login"
+  },
+  "UrlRedirectsPage": {
+    "Url": "urlredirections",
+    "Identifier": "urlredirections-index-page",
+    "SearchBox": {
+      "SearchByAlias": ".input-area > input[placeholder=\"Search by Alias\"]"
+    }
   }
 }

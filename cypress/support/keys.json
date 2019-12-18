@@ -1,20 +1,8 @@
 {
-  "Enter": {
-    "enter": null
-  },
-  "Backspace": {
-    "backspace": null
-  },
-  "Delete": {
-    "delete": null
-  },
-  "End": {
-    "end": null
-  },
-  "Escape": {
-    "escape": null
-  },
-  "Home": {
-    "home": null
-  }
+  "Enter": "{enter}",
+  "Backspace": "{backspace}",
+  "Delete": "{delete}",
+  "End": "{end}",
+  "Escape": "{escape}",
+  "Home": "{home}"
 }
