@@ -130,7 +130,8 @@ CreateFlexiPage:
  MetaDescription: "#MetaDescription"
 
 HomePage:
- Url: 
+ Url: /admin
+ LogoutButton: .btn-logout
 
 Layout:
  LogoutLink: .btn-logout
@@ -228,3 +229,9 @@ Layout:
    Apps:
     Addons:
     DesignPack:
+
+LoginPage:
+ Url: /login
+ Email: .row-email input
+ Password: .row-password input
+ LoginButton: .btn-login

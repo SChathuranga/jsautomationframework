@@ -118,10 +118,20 @@ export function Select(locator, option)
 
 export function LoginToAdminIfNeeded()
 {
-    cy.visit(Cypress.config().baseUrl + "/admin");
-    cy.get('.row-email input').type(Testdata.Admin.Users.SysAdmin.TestUserEmail);
-    cy.get('.row-password input').type(Testdata.Admin.Users.SysAdmin.TestUserPassword);
-    cy.get('.btn-login').click();
+    cy.get('body').then((body) => {
+        if(body.find(Admin.HomePage.LogoutButton).length==0)
+        {
+            cy.get(Admin.LoginPage.Email).type(Testdata.Admin.Users.SysAdmin.TestUserEmail);
+            cy.get(Admin.LoginPage.Password).type(Testdata.Admin.Users.SysAdmin.TestUserPassword);
+            cy.get(Admin.LoginPage.LoginButton).click();
+            I.AmNotOn(Admin.LoginPage.Url);
+        }
+    })
+}
+
+export function AmNotOn(pageUrl)
+{
+    cy.url().should('not.contain', pageUrl);
 }
 
 export function DeleteWebPageIfItExists(flexiPageUrl)
@@ -133,17 +143,16 @@ export function DeleteWebPageIfItExists(flexiPageUrl)
         if(body.find('.table-sana tbody tr').length>0){
             cy.get('.table-sana tbody tr').its('length').should('be.gte', 0);
             cy.wait(500);
-            cy.get('.table-sana tbody tr td a[href="/admin/flexipages/delete"]').first().click({force: true});
-            cy.pause();
-            cy.get('.modal-footer > .btn-primary').click();
+            cy.get('.table-sana tbody tr td a[href="/admin/flexipages/delete"]').first().click();
+            cy.get('.modal-footer > .btn-primary').click({force:true});
+            I.RefreshSiteCache();
         }
     })
 }
 
 export function RefreshSiteCache()
 {
-    //I.Open("Admin_HomePage", "");
-    //I.LoginToAdminIfNeeded();
+    I.LoginToAdminIfNeeded();
     I.Click('.navbar .navbar-right #toolsmenu .dropdown-toggle');
     I.Click(Admin.Layout.Tools.RefreshSiteCache);
 }

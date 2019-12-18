@@ -145,7 +145,8 @@
     "MetaDescription": "#MetaDescription"
   },
   "HomePage": {
-    "Url": null
+    "Url": "/admin",
+    "LogoutButton": ".btn-logout"
   },
   "Layout": {
     "LogoutLink": ".btn-logout",
@@ -253,5 +254,11 @@
         "DesignPack": null
       }
     }
+  },
+  "LoginPage": {
+    "Url": "/login",
+    "Email": ".row-email input",
+    "Password": ".row-password input",
+    "LoginButton": ".btn-login"
   }
 }

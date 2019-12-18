@@ -8,7 +8,7 @@ import { I_AddNewsletterContentBlockToFlexiPage } from '../Newsletter/newsletter
 context('NewsletterCB', () => {
     it('Newsletter_ViewNewsletter_OnFlexiPage', () => {
         I_AddNewsletterContentBlockToFlexiPage();
-        //I.Click(Admin.EditFlexiPage.SaveButton);
+        I.Click(Admin.EditFlexiPage.SaveButton);
         cy.pause();
         I.RefreshSiteCache();
         cy.wait(1000);
