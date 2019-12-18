@@ -1,5 +1,5 @@
 var inputfile = 'cypress/support/keys.yml',
-    outputfile = 'keys.json',
+    outputfile = 'cypress/support/keys.json',
     yaml = require('js-yaml'),
     fs = require('fs'),
     obj = yaml.load(fs.readFileSync(inputfile, {encoding: 'utf-8'}));

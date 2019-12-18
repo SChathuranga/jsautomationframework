@@ -1,4 +1,3 @@
-const Pages = require('../../pageobjects/pages.json')
 const Testdata = require('../../testdata/testdata.json')
 const I = require('../../testbase/testbase')
 const FlexiPage = require('../../pageobjects/flexiPage.json')
