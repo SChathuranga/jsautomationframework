@@ -154,7 +154,17 @@ export function RefreshSiteCache()
 {
     I.LoginToAdminIfNeeded();
     I.Click('.navbar .navbar-right #toolsmenu .dropdown-toggle');
-    I.Click(Admin.Layout.Tools.RefreshSiteCache);
+    cy.get(Admin.Layout.Tools.RefreshSiteCache).then(($rsbutn) =>{
+        if($rsbutn.is(':visible'))
+        {
+            cy.get(Admin.Layout.Tools.RefreshSiteCache).click();
+        }
+        else
+        {
+            I.Click('.navbar .navbar-right #toolsmenu .dropdown-toggle');
+            cy.get(Admin.Layout.Tools.RefreshSiteCache).click({fore:true});
+        }
+    })
 }
 
 export function PrepareFlexiPageForCheck(flexiPageTitle, flexiPageUrl, withSave=true)
