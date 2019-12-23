@@ -5,22 +5,22 @@ var inputfile = 'cypress/support/keys.yml',
     obj = yaml.load(fs.readFileSync(inputfile, {encoding: 'utf-8'}));
 fs.writeFileSync(outputfile, JSON.stringify(obj, null, 2));
 
-var inputfile = 'cypress/pageObjects/adminPages.yml',
-    outputfile = 'cypress/pageObjects/adminPages.json',
+var inputfile = 'cypress/pageobjects/adminPages.yml',
+    outputfile = 'cypress/pageobjects/adminPages.json',
     yaml = require('js-yaml'),
     fs = require('fs'),
     obj = yaml.load(fs.readFileSync(inputfile, {encoding: 'utf-8'}));
 fs.writeFileSync(outputfile, JSON.stringify(obj, null, 2));
 
-var inputfile = 'cypress/pageObjects/controls.yml',
-    outputfile = 'cypress/pageObjects/controls.json',
+var inputfile = 'cypress/pageobjects/controls.yml',
+    outputfile = 'cypress/pageobjects/controls.json',
     yaml = require('js-yaml'),
     fs = require('fs'),
     obj = yaml.load(fs.readFileSync(inputfile, {encoding: 'utf-8'}));
 fs.writeFileSync(outputfile, JSON.stringify(obj, null, 2));
 
-var inputfile = 'cypress/pageObjects/flexiPage.yml',
-    outputfile = 'cypress/pageObjects/flexiPage.json',
+var inputfile = 'cypress/pageobjects/flexiPage.yml',
+    outputfile = 'cypress/pageobjects/flexiPage.json',
     yaml = require('js-yaml'),
     fs = require('fs'),
     obj = yaml.load(fs.readFileSync(inputfile, {encoding: 'utf-8'}));
