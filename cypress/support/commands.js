@@ -23,3 +23,10 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+Cypress.Commands.add("getIFrameElement", (iFrameSelector, elementSelector) => {
+    cy.get(iFrameSelector).then($element=> {
+        const $body = $element.contents().find('body');
+        let stripe = cy.wrap($body)
+        stripe.find(elementSelector).eq(0)
+    })
+})

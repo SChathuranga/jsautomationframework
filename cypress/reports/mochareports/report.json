@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-12-19T10:49:45.193Z",
+    "end": "2019-12-19T10:49:45.194Z",
+    "duration": 66815,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "480b0973-5368-4eae-b947-1ed458e61bf2",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "adbcd230-cb9b-4272-8453-329abe2fd6b5",
+          "title": "NewsletterCB",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Newsletter_ViewNewsletter_OnFlexiPage",
+              "fullTitle": "NewsletterCB Newsletter_ViewNewsletter_OnFlexiPage",
+              "timedOut": null,
+              "duration": 27892,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _newsletterHelpers.I_AddNewsletterContentBlockToFlexiPage)();\nI.Click(Admin.EditFlexiPage.SaveButton);\nI.Wait(500);\nI.RefreshSiteCache();\nI.Open(\"FlexiPage\", TestData.Addons.Newsletter.FlexiPageUrl);\nI.SeeInTitle(TestData.Addons.Newsletter.FlexiPageTitle);\nI.See(FlexiPage.NewsletterContentBlock.ContentBlock);",
+              "err": {},
+              "uuid": "10760c53-a26d-46fd-b364-012c4ef2959f",
+              "parentUUID": "adbcd230-cb9b-4272-8453-329abe2fd6b5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Newsletter_VerifyRequiredFields_OnFlexiPage",
+              "fullTitle": "NewsletterCB Newsletter_VerifyRequiredFields_OnFlexiPage",
+              "timedOut": null,
+              "duration": 16554,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "I.Open(\"Admin_FlexiPage\");\nI.LoginToAdminIfNeeded();\nI.PrepareFlexiPageForCheck(TestData.Addons.Newsletter.FlexiPageTitle, TestData.Addons.Newsletter.FlexiPageUrl);\nI.SearchAdminWebPage(Admin.FlexiPage.SearchBox, TestData.Addons.Newsletter.FlexiPageUrl);\nI.Click(Admin.FlexiPage.Table.Line.EditButton);\nI.AmOn(\"Admin_EditFlexiPage\");\nI.Click(Admin.EditFlexiPage.ContentElements.AddElement.Opener);\nI.Click(Admin.EditFlexiPage.ContentElements.AddElement.Newsletter);\nI.See(Admin.EditFlexiPage.Newsletter);\nI.Click(Admin.EditFlexiPage.SaveButton);\nI.See(Admin.EditFlexiPage.Newsletter.BackgroundColorValidation);\nI.Click(Admin.EditFlexiPage.Newsletter.BackgroundImageToggleButton);\nI.Click(Admin.EditFlexiPage.SaveButton);\nI.See(Admin.EditFlexiPage.Newsletter.BackgroundImageValidation);",
+              "err": {},
+              "uuid": "40d3a327-27cb-4833-b8df-8ffee2476008",
+              "parentUUID": "adbcd230-cb9b-4272-8453-329abe2fd6b5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Newsletter_VerifyEmailValidation_OnFlexiPage",
+              "fullTitle": "NewsletterCB Newsletter_VerifyEmailValidation_OnFlexiPage",
+              "timedOut": null,
+              "duration": 22369,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _newsletterHelpers.I_AddNewsletterContentBlockToFlexiPage)();\nI.Click(Admin.EditFlexiPage.SaveButton);\nI.Wait(500);\nI.RefreshSiteCache();\nI.Open(\"FlexiPage\", TestData.Addons.Newsletter.FlexiPageUrl);\nI.Click(FlexiPage.NewsletterContentBlock.SubscribeButton);\nI.See(FlexiPage.NewsletterContentBlock.EmailValidator);",
+              "err": {},
+              "uuid": "6351c58b-0b32-4ed2-ae62-7ea8a104ef8d",
+              "parentUUID": "adbcd230-cb9b-4272-8453-329abe2fd6b5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "10760c53-a26d-46fd-b364-012c4ef2959f",
+            "40d3a327-27cb-4833-b8df-8ffee2476008",
+            "6351c58b-0b32-4ed2-ae62-7ea8a104ef8d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 66815,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

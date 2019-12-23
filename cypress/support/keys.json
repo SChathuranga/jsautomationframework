@@ -1,8 +1,8 @@
 {
   "Enter": "{enter}",
   "Backspace": "{backspace}",
-  "Delete": "{delete}",
+  "Delete": "{del}",
   "End": "{end}",
-  "Escape": "{escape}",
+  "Escape": "{esc}",
   "Home": "{home}"
 }

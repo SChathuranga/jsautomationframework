@@ -1,8 +1,19 @@
 {
-    "viewportWidth": 1920,
-    "viewportHeight": 1280,
-    "reporter": "mochawesome",
-
-    "baseUrl": "https://automation9352.azurewebsites.net",
-    "chromeWebSecurity": false
-  }
+  "viewportWidth": 1280,
+  "viewportHeight": 720,
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "reportDir": "cypress/reports/mocha",
+      "quite": true,
+      "overwrite": false,
+      "html": false,
+      "json": true
+    }
+  },
+  "baseUrl": "https://automation9352.azurewebsites.net",
+  "chromeWebSecurity": false,
+  "projectId": "w63nyu",
+  "comparisonBenchmark": "90"
+}

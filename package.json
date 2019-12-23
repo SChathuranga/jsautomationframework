@@ -4,19 +4,28 @@
   "description": "cypress based test automation framework that aligns with the test scripting syntax of Sana Commerce test automation framework",
   "main": "index.js",
   "scripts": {
-    "pretest": "node customtool.js",
-    "test": "npx cypress open"
+    "clean-reports": "rm -R -f cypress/reports && mkdir cypress/reports && mkdir cypress/reports/mochareports",
+    "pretest": "",
+    "scripts": "cypress run",
+    "combine-reports": "mochawesome-merge --reportDir cypress/reports/mocha > cypress/reports/mochareports/report.json",
+    "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
+    "posttest": "npm run combine-reports && npm run generate-report",
+    "test": "npm run scripts || npm run posttest"
   },
-  "author": "Chathuranga",
+  "author": "Chathuranga and Lasitha",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^3.7.0",
+    "cypress": "^3.8.0",
+    "cypress-file-upload": "^3.4.0",
+    "cypress-multi-reporters": "^1.2.3",
     "cypress-xpath": "^1.4.0",
     "js-yaml": "^3.13.1",
-    "mochawesome": "^4.1.0"
+    "mocha": "^6.2.2",
+    "mochawesome": "^4.1.0",
+    "mochawesome-merge": "^2.1.0",
+    "mochawesome-report-generator": "^4.1.0"
   },
   "dependencies": {
-    "mocha": "^6.2.2",
     "npm": "^6.13.4"
   }
 }

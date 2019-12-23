@@ -5,13 +5,9 @@ const Admin = require('../pageobjects/adminPages.json')
 const Keys = require('../support/keys.json')
 const I = require('../testbase/testbase')
 
-export function IOpen(url)
-{
-    if(url.includes("https://"))
-        cy.visit(url)
-    else if(url.toLocaleLowerCase().includes("admin"))
-        cy.visit(Cypress.config().baseUrl+"/" + url)
-}
+export let Admin_FlexiPage = "Admin_FlexiPage"
+export let Admin_EditFlexiPage = "Admin_EditFlexiPage"
+export let FlexiPage = "FlexiPage"
 
 export function Open(pagetype, url="")
 {
@@ -282,11 +278,16 @@ export function SeeInTitle(pageTitle)
     cy.title().should('contain', pageTitle);
 }
 
-export function GetIFrameElement(selector, elementLocator)
+export function GetIFrameElement(iFrameLocator, elementLocator)
 {
-    cy.get("#page-content  div iframe").then($element=> {
+    cy.get(iFrameLocator).then($element=> {
         const $body = $element.contents().find('body');
         let stripe = cy.wrap($body)
-        stripe.find('.btn-install').eq(0)
+        stripe.find(elementLocator).eq(0)
     })
+}
+
+export function ClickByForce(locator)
+{
+    cy.get(locator).click({force:true});
 }
