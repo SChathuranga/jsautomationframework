@@ -26,6 +26,7 @@
     "mochawesome-report-generator": "^4.1.0"
   },
   "dependencies": {
+    "jshint": "^2.11.0-rc1",
     "npm": "^6.13.4"
   }
 }
