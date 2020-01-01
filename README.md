@@ -1,6 +1,6 @@
 # Cypress Test Automation Framework
 
-A test automation framework based on Cypress aligning with the Syntax of Sana test automation framework
+A test automation framework based on Cypress with a user readable and understandable syntax!
 
 ## Web UI test automation
 
@@ -25,12 +25,6 @@ npm run test - Run all test specs
 
 npx cypress Open - Open Cypress execution panel
 ```
-
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate & please follow the coding standards!
 
 ## Authors
 
