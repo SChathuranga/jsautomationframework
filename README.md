@@ -1,4 +1,4 @@
-# Cypress Test Automation Framework For SANA Commerce
+# Cypress Test Automation Framework
 
 A test automation framework based on Cypress aligning with the Syntax of Sana test automation framework
 
@@ -36,4 +36,3 @@ Please make sure to update tests as appropriate & please follow the coding stand
 
 * Chathuranga Jayasinghe - c.jayasinghe@sana-commerce.com
 * Lasitha Wijenayake - l.wijenayake@sana-commerce.com
-* Channa Bandara - c.bandara@sana-commerce.com
