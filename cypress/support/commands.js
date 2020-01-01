@@ -30,3 +30,11 @@ Cypress.Commands.add("getIFrameElement", (iFrameSelector, elementSelector) => {
         stripe.find(elementSelector).eq(0)
     })
 })
+
+import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command';
+addMatchImageSnapshotCommand({
+    failureThreshold: Cypress.env('uiValidationThreshold'),
+    failureThresholdType: 'percent',
+    customSnapshotsDir: 'cypress/visualtests',
+    customDiffDir: 'cypress/visualtests/diffs'
+});

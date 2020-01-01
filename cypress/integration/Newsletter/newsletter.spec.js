@@ -4,8 +4,14 @@ const FlexiPage = require('../../pageobjects/flexiPage.json')
 const Admin = require('../../pageobjects/adminPages.json')
 const Keys = require('../../support/keys.json')
 import { I_AddNewsletterContentBlockToFlexiPage } from '../../helpers/newsletterHelpers'
+let CurrentTestCaseName='';
 
 context('NewsletterCB', () => {
+
+    beforeEach(function() {
+        CurrentTestCaseName = Cypress.mocha.getRunner().suite.ctx.currentTest.title
+    })
+
     it('Newsletter_ViewNewsletter_OnFlexiPage', () => {
         I_AddNewsletterContentBlockToFlexiPage()
         I.Click(Admin.EditFlexiPage.SaveButton)
@@ -15,6 +21,7 @@ context('NewsletterCB', () => {
         I.Open("FlexiPage", TestData.Addons.Newsletter.FlexiPageUrl)
         I.SeeInTitle(TestData.Addons.Newsletter.FlexiPageTitle)
         I.See(FlexiPage.NewsletterContentBlock.ContentBlock)
+        I.ValidateUI(FlexiPage.NewsletterContentBlock.ContentBlock)
     })
 
     it('Newsletter_VerifyRequiredFields_OnFlexiPage', () =>
@@ -37,5 +44,6 @@ context('NewsletterCB', () => {
         I.Open("FlexiPage", TestData.Addons.Newsletter.FlexiPageUrl)
         I.Click(FlexiPage.NewsletterContentBlock.SubscribeButton)
         I.See(FlexiPage.NewsletterContentBlock.EmailValidator)
+        I.ValidateUI(FlexiPage.NewsletterContentBlock.ContentBlock)
     })
 })

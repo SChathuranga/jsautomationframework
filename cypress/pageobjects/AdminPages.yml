@@ -1,0 +1,248 @@
+FlexiPage:
+  Url: flexipages
+  Identifier: flexipages-index-page
+  NewItemButton: .btn-add
+  SearchBox:
+    DefaultSearch: .filter-box .search
+    Opener: .filter-box .dropdown-toggle
+    SearchByTitle: .filter-box input[name$='Title']
+    SearchByEmail: .filter-box input[name$='Email']
+    SearchByAlias: .filter-box input[name="Url"]
+    SearchByName: .filter-box input[name$='Name']
+    SearchDropdownButton: .filter-box .input-group-btn
+    SearchByUrl: .filter-box input[name="Url"]
+    DateFrom: .filter-box input[name="ItemDate.From"]
+    DateTo: .filter-box input[name="ItemDate.To"]
+    SearchButton: .filter-box .btn-primary[type="Submit"]
+    DeleteFilterButton: .filter-box .filters a
+    DeleteButton: .filter-box .btn-delete
+  Table:
+    BatchActionDropdown:
+      Opener: .table-sana .grid-batch .dropdown-toggle
+      SelectAll: .table-sana .grid-batch a[data-action="select"]
+      DeselectAll: .table-sana .grid-batch a[data-action="deselect"]
+      DeleteSelectedItems: .table-sana .grid-batch a[data-action="delete"]
+    Lines: .table-sana tbody tr
+    Line:
+      Selected: input[type="checkbox"]
+      Name: .col-name
+      Email: .col-email
+      Title: .col-title p
+      Alias: .col-url
+      Url: .col-url
+      ItemNo: .col-productid
+      Link: .col-linkdata
+      NewsItemDate: .col-itemdate
+      DateCreated: .col-createddate
+      DateModified: .col-modifieddate
+      SelectLine: input[type="checkbox"]
+      FilterExpression: .col-filter p
+      PermanentCheckbox: .col-permanent input[type="checkbox"]
+      EditButton: .table-sana tbody tr td .btn-edit
+      DeleteButton: .table-sana tbody tr td a[href="/admin/flexipages/delete"]
+      ExtraActionDropdown:
+        Opener: .extra-actions .dropdown-toggle
+        ViewPage: .extra-actions li:nth-child(1) a
+        Duplicate: .extra-actions li:nth-child(2) a
+        SetAsHomePage: .extra-actions li:nth-child(3) a
+
+EditFlexiPage:
+  Identifier: flexipages-edit-page
+  Newsletter:
+    Title: .content-blocks-editor .panel .form-group.row-title input
+    TitleColor: .content-blocks-editor .panel .form-group.row-titlecolor input
+    Subtitle: .content-blocks-editor .panel .form-group.row-subtitle input
+    SubtitleColor: .content-blocks-editor .panel .form-group.row-subtitlecolor input
+    EmailFieldText: .content-blocks-editor .panel .form-group.row-emailfieldtext input
+    SubscribeButtonText: .content-blocks-editor .panel .form-group.row-subscribebuttontext input
+    BackgroundColor: .content-blocks-editor .panel .form-group.row-backgroundcolor input
+    BackgroundImageToggleButton: .content-blocks-editor .row-usebackgroundimage .toggler i
+    BackgroundImage: .content-blocks-editor .panel .form-group.row-backgroundimage input
+    BackgroundColorValidation: .content-blocks-editor .row-backgroundcolor .field-validation-error span
+    BackgroundImageValidation: .content-blocks-editor .row-backgroundimage .field-validation-error span
+    DisplayFullWidthToggleButton: .content-blocks-editor .row-fullwidth i
+    AdminPageLable: .content-blocks-editor a:contains(Newsletter)
+    ContentBlock: .content-blocks-editor
+  ContentElements:
+    AddElement:
+      Opener: .content-blocks-editor .add-new button
+      Text: .content-blocks-editor .add-new a[href="#Html"]
+      ImageTiles: .content-blocks-editor .add-new a[href="#ImageTiles"]
+      ImageSlider: .content-blocks-editor .add-new a[href='#ImageSlider']
+      ChildMenuItems: .content-blocks-editor .add-new a[href="#ChildMenuItems"]
+      ProductSet: .content-blocks-editor .add-new a[href="#ProductSet"]
+      ProductSetFilter: .content-blocks-editor .add-new a[href="#ProductSetFilter"]
+      FullPageBanner: .content-blocks-editor .add-new a[href="#MainBanner"]
+      Usp: .content-blocks-editor .add-new a[href="#Usp"]
+      Newsletter: .content-blocks-editor .add-new a[href="#Newsletter"]
+      Items(List):
+        Value: .content-blocks-editor .add-new ul li a
+      AddOnDisableLabel: .content-blocks-editor .add-new a[href="#TwitterFeed"] i
+    Elements(List): #.content-blocks-editor .panel-expander
+      TextArea: .fr-element
+      DeleteButton: .btn-delete
+      SettingsButton: .btn-settings
+      ExpandButton: .fa-caret-down
+      SelectedSegments(List):
+        DeleteButton: .segments-selection .selected-segments .button-remove
+      SearchInput: .segments-selection .selected-segments input .tt-input
+      Suggestions(List): .tt-dataset div
+      Title: .panel-title a
+      Expander: .fa-caret-down
+      Settings:
+        ContentElementTitleInput: .content-blocks-editor .name-addition-settings input
+        SegmentsSearchInput: .content-blocks-editor .search-segments .tt-input
+        ContentVisibilityFromDate: .content-blocks-editor .staging-settings input[name*='StartDate']
+        ContentVisibilityToDate: .content-blocks-editor .staging-settings input[name*='EndDate']
+  SaveButton: .btn-save
+  Header: #page-content h1
+  Title: input[name=Title]
+  UrlField: input[name=Url]
+  TabSet:
+    Basics: .nav-tabs a[href="#Tab_Basics"]
+    Advanced: .nav-tabs a[href="#Tab_Advanced"]
+  MetaTitle: input[name=MetaTitle]
+  MetaDescription: #MetaDescription
+  PreviewButton: .btn-preview
+  CancelButton: .btn-cancel
+
+CreateFlexiPage:
+  Url: flexipages/create
+  Identifier: flexipages-create-page
+  Title: input[name=Title]
+  UrlField: input[name=Url]
+  PreviewButton: .btn-preview
+  CancelButton: .btn-cancel
+  SaveChangesButton: .btn-save
+  TitleValidation: "#Title-error"
+  UrlValidation: span[data-valmsg-for=Url]
+  ContentElements: ContentElementsControl
+  TextBlock: TextBlockControl
+  ImageTiles: ImageTilesControl
+  ChildMenuItems: ChildMenuItemsControl
+  ProductSetBlock: ProductSetBlockControl
+  CustomerSegmentSelector: CustomerSegmentSelectorControl
+  NewCustomerSegmentPopup: NewCustomerSegmentPopupControl
+  FullPageBanner: FullPageBannerControl
+  Usp: UspControl
+  FileManager: FileManagerControl
+  TabSet:
+    Basics: .nav-tabs a[href="#Tab_Basics"]
+    Advanced: .nav-tabs a[href="#Tab_Advanced"]
+  MetaTitle: .nav-tabs input[name=MetaTitle]
+  MetaDescription: "#MetaDescription"
+
+HomePage:
+  Url: /admin
+  Identifier: home-index-page
+  LogoutButton: .btn-logout
+
+Layout:
+  LogoutLink: .btn-logout
+  Tools:
+    ToolsMenu: "#toolsmenu"
+    Opener: ".navbar .navbar-right #toolsmenu .dropdown-toggle"
+    UserManagement: a[href$="users"]
+    ErpConnection: a[href$="connection"]
+    ServerManagement: a[href$="servers"]
+    Logs: a[href$="logs"]
+    CharacterReplacementRules: a[href$="characterreplacements"]
+    HTMLEditor: a[href$="htmleditor"]
+    WebstoreDomains: a[href$="websitedomains"]
+    PerformanceProfiler: a[href$="actions/openperformanceprofiler"]
+    IntegrityCheck: a[href$="healthcheck"]
+    InSiteEditor: a[href$="actions/openfrontendeditor"]
+    FileManager: a[href$="filemanager"]
+    ScheduledTasks: a[href$="tasks"]
+    RefreshSiteCache: button[data-href$="actions/refreshcontentcache"]
+    RefreshErpData: button[data-href$="actions/refresherpcache"]
+  Confirmation:
+    Confirm: .modal-footer > .btn-primary
+    Cancel: \#confirmModal .modal-content .modal-footer .btn[data-dismiss="modal"]
+  UnsavedChangesDialog:
+    Close: \#unsavedChangesDialog .modal-content.close
+    LeaveThePage: \#unsavedChangesDialog .modal-content .btn-ignore
+    StayOnCurrentPage: \#unsavedChangesDialog .modal-content .btn-cancel
+  Profile: AdminProfileControl
+  Menu:
+    Setup:
+      Basics_Info: body div#Setup ul.nav li>a[href$="/admin/storebasics"]
+      Basics_Languages: body div#Setup ul.nav li>a[href$="/admin/storebasics/languages"]
+      Basics_Robots: body div#Setup ul.nav li>a[href$="/admin/storebasics/robots"]
+      Design_Themes: body div#Setup ul.nav li>a[href$="/admin/themes"]
+      Design_StoreLayouts: body div#Setup ul.nav li>a[href$="/admin/themes/storelayouts"]
+      Design_PageLayouts: body div#Setup ul.nav li>a[href$="/admin/themes/pagelayouts"]
+      Design_DesignPacks: body div#Setup ul.nav li>a[href$="/admin/packages"]
+      ErpIntegration_IndexFields: body div#Setup ul.nav li>a[href$="/admin/productindex/indexsettings"]
+      ErpIntegration_ItemCategories: body div#Setup ul.nav li>a[href$="/admin/categoryimport"]
+      NavigationAndSearch_Menus: body div#Setup ul.nav li>a[href$="/admin/menus"]
+      NavigationAndSearch_FacettedFilters: body div#Setup ul.nav li>a[href$="/admin/productindex/facetssettings"]
+      NavigationAndSearch_SearchAndResult: body div#Setup ul.nav li>a[href$="/admin/productindex/searchsettings"]
+      WebPages_Homepage: body div#Setup ul.nav li>a[href$="/admin/webpagessettings/homepage"]
+      WebPages_CustomerService: body div#Setup ul.nav li>a[href$="/admin/webpagessettings/customerservice"]
+      WebPages_ProductListPages: body div#Setup ul.nav li>a[href$="/admin/webpagessettings/productlist"]
+      WebPages_ShoppingCartSuggestions: body div#Setup ul.nav li>a[href$="/admin/webpagessettings/shoppingcartsuggestions"]
+      WebPages_SystemPages: body div#Setup ul.nav li>a[href$="/admin/systempagessettings"]
+      Emails: body div#Setup ul.nav li>a[href$="/admin/mailtemplates"]
+      PageElementsAndMessages_Texts: body div#Setup ul.nav li>a[href$="/admin/sanatexts"]
+      PageElementsAndMessages_ErrorMessages: body div#Setup ul.nav li>a[href$="/admin/sanatexts/errors"]
+      PageElementsAndMessages_CustomStockTexts: body div#Setup ul.nav li>a[href$="/admin/sanatexts/stock"]
+      PageElementsAndMessages_HtmlInjections: body div#Setup ul.nav li>a[href$="/admin/sanatexts/injections"]
+      Products_ProductSets: body div#Setup ul.nav li>a[href$="/admin/productsets"]
+      Products_Price: body div#Setup ul.nav li>a[href$="/admin/productsettings/price"]
+      Products_ProductSpecifications: body div#Setup ul.nav li>a[href$="/admin/productspecs"]
+      Products_StockAndAssortment: body div#Setup ul.nav li>a[href$="/admin/productsettings/stockandassortment"]
+      Products_StockLevels: body div#Setup ul.nav li>a[href$="/admin/stockranges"]
+      Products_UnitsOfMeasure: body div#Setup ul.nav li>a[href$="/admin/productsettings/unitsofmeasure"]
+      Customer_RegistrationFields: body div#Setup ul.nav li>a[href$="/admin/registrationsettings"]
+      Customer_ProfileFields: body div#Setup ul.nav li>a[href$="/admin/profilesettings"]
+      OrderingAndCheckout_Ordering: body div#Setup ul.nav li>a[href$="/admin/orderingandcheckout"]
+      OrderingAndCheckout_ShoppingCart: body div#Setup ul.nav li>a[href$="/admin/orderingandcheckout/shoppingcart"]
+      OrderingAndCheckout_Tax: body div#Setup ul.nav li>a[href$="/admin/orderingandcheckout/tax"]
+      OrderingAndCheckout_Shipping: body div#Setup ul.nav li>a[href$="/admin/shippingsettings"]
+      OrderingAndCheckout_ShippingMethods: body div#Setup ul.nav li>a[href$="/admin/shippingmethods"]
+      OrderingAndCheckout_PaymentMethods: body div#Setup ul.nav li>a[href$="/admin/paymentmethods"]
+      Marketing_Promotions: body div#Setup ul.nav li>a[href$="/admin/marketingsettings"]
+      Marketing_SocialFeatures: body div#Setup ul.nav li>a[href$="/admin/marketingsettings/socialfeatures"]
+      Marketing_Individualization: body div#Setup ul.nav li>a[href$="/admin/marketingsettings/individualization"]
+      Marketing_Analytics: body div#Setup ul.nav li>a[href$="/admin/marketingsettings/analytics"]
+      MobileApp_Configuration: body div#Setup ul.nav li>a[href$="/admin/mobileconfig"]
+      MobileApp_Content: body div#Setup ul.nav li>a[href$="/admin/mobileconfig/content"]
+      MobileApp_Catalog: body div#Setup ul.nav li>a[href$="/admin/mobileconfig/catalog"]
+      MobileApp_Devices: body div#Setup ul.nav li>a[href$="/admin/mobiledevices"]
+      MobileApp_Menus: body div#Setup ul.nav li>a[href$="/admin/mobilemenus"]
+    WebPages:
+      ProductPages: body div#Pages ul.nav li>a[href$="/admin/productpages"]
+      ProductListPages: body div#Pages ul.nav li>a[href$="/admin/productlistpages"]
+      FlexiPages: body div#Pages ul.nav li>a[href$="/admin/flexipages"]
+      FAQ: body div#Pages ul.nav li>a[href$="/admin/faqpages"]
+      News: body div#Pages ul.nav li>a[href$="/admin/news"]
+      UrlRedirects: body div#Pages ul.nav li>a[href$="/admin/urlredirections"]
+    Customers:
+      ShopAccounts: body div#Customers ul.nav li>a[href$="/admin/shopaccounts"]
+      CustomerSegments: body div#Customers ul.nav li>a[href$="/admin/customersegments"]
+      RatingAndReviews: body div#Customers ul.nav li>a[href*="/admin/productsreviews"]
+      NewsletterSubscriptions: body div#Customers ul.nav li>a[href$="/admin/newslettersubscriptions"]
+    Promotions:
+      DiscountCodes: body div#Promotions ul.nav li>a[href$="/admin/discountcodes"]
+      CheckoutOffers: body div#Promotions ul.nav li>a[href$="/admin/checkoutoffers"]
+    Sales:
+      SalesStatistics: body div#Sales ul.nav li>a[href$="/admin/customerstatistics"]
+      UnprocessedOrders: body div#Sales ul.nav li>a[href*="/admin/offlineorders"]
+      MobileOrders: body div#Sales ul.nav li>a[href*="/admin/externalofflineorders"]
+    Apps:
+      Addons:
+      DesignPack:
+
+LoginPage:
+  Url: /login
+  Identifier: profile-login-page
+  Email: .row-email input
+  Password: .row-password input
+  LoginButton: .btn-login
+
+UrlRedirectsPage:
+  Url: urlredirections
+  Identifier: urlredirections-index-page
+  SearchBox:
+    SearchByAlias: .input-area > input[placeholder="Search by Alias"]

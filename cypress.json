@@ -15,5 +15,10 @@
   "baseUrl": "https://automation9352.azurewebsites.net",
   "chromeWebSecurity": false,
   "projectId": "w63nyu",
-  "comparisonBenchmark": "90"
+  "comparisonBenchmark": "90",
+  "trashAssetsBeforeRuns": false,
+  "env":
+  {
+    "uiValidationThreshold": "0.03"
+  }
 }

@@ -9,6 +9,14 @@ export let Admin_FlexiPage = "Admin_FlexiPage"
 export let Admin_EditFlexiPage = "Admin_EditFlexiPage"
 export let FlexiPage = "FlexiPage"
 
+export function IOpen(url)
+{
+    if(url.includes("https://"))
+        cy.visit(url)
+    else if(url.toLocaleLowerCase().includes("admin"))
+        cy.visit(Cypress.config().baseUrl+"/" + url)
+}
+
 export function Open(pagetype, url="")
 {
     if(url.includes("https://"))
@@ -290,4 +298,18 @@ export function GetIFrameElement(iFrameLocator, elementLocator)
 export function ClickByForce(locator)
 {
     cy.get(locator).click({force:true});
+}
+
+export function ValidateUI(contentBlockLocator)
+{
+    cy.get(contentBlockLocator).matchImageSnapshot()
+}
+
+export function TakeScreenShotOfTheElement(contentBlockLocator, testCaseName)
+{
+    cy.get(contentBlockLocator).screenshot(testCaseName)
+}
+
+export function TakeScreenShot(testCaseName) {
+    cy.screenshot(testCaseName)
 }

@@ -15,8 +15,9 @@
   "author": "Chathuranga and Lasitha",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^3.8.0",
+    "cypress": "^3.8.1",
     "cypress-file-upload": "^3.4.0",
+    "cypress-image-snapshot": "^3.1.1",
     "cypress-multi-reporters": "^1.2.3",
     "cypress-xpath": "^1.4.0",
     "js-yaml": "^3.13.1",
@@ -26,7 +27,7 @@
     "mochawesome-report-generator": "^4.1.0"
   },
   "dependencies": {
-    "jshint": "^2.11.0-rc1",
+    "cypress-match-screenshot": "^1.1.0",
     "npm": "^6.13.4"
   }
 }

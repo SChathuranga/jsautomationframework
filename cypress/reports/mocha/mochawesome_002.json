@@ -1,0 +1,149 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2019-12-20T11:18:06.464Z",
+    "end": "2019-12-20T11:20:48.119Z",
+    "duration": 161655,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f99ec8a1-50c8-412c-bdbd-73daaf4f88ef",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0e43bdef-eb6e-4fc3-bed4-c5fb78d32ec5",
+          "title": "NewsletterCB",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Newsletter_ViewNewsletter_OnFlexiPage",
+              "fullTitle": "NewsletterCB Newsletter_ViewNewsletter_OnFlexiPage",
+              "timedOut": null,
+              "duration": 50748,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _newsletterHelpers.I_AddNewsletterContentBlockToFlexiPage)();\nI.Click(Admin.EditFlexiPage.SaveButton);\nI.Wait(500);\nI.RefreshSiteCache();\nI.Open(\"FlexiPage\", TestData.Addons.Newsletter.FlexiPageUrl);\nI.SeeInTitle(TestData.Addons.Newsletter.FlexiPageTitle);\nI.See(FlexiPage.NewsletterContentBlock.ContentBlock);",
+              "err": {},
+              "uuid": "34d11898-b642-4a15-8799-64b41e6d2126",
+              "parentUUID": "0e43bdef-eb6e-4fc3-bed4-c5fb78d32ec5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Newsletter_VerifyRequiredFields_OnFlexiPage",
+              "fullTitle": "NewsletterCB Newsletter_VerifyRequiredFields_OnFlexiPage",
+              "timedOut": null,
+              "duration": 53958,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "I.Open(\"Admin_FlexiPage\");\nI.LoginToAdminIfNeeded();\nI.PrepareFlexiPageForCheck(TestData.Addons.Newsletter.FlexiPageTitle, TestData.Addons.Newsletter.FlexiPageUrl);\nI.SearchAdminWebPage(Admin.FlexiPage.SearchBox, TestData.Addons.Newsletter.FlexiPageUrl);\nI.Click(Admin.FlexiPage.Table.Line.EditButton);\nI.AmOn(\"Admin_EditFlexiPage\");\nI.Click(Admin.EditFlexiPage.ContentElements.AddElement.Opener);\nI.Click(Admin.EditFlexiPage.ContentElements.AddElement.Newsletter);\nI.See(Admin.EditFlexiPage.Newsletter);\nI.Click(Admin.EditFlexiPage.SaveButton);\nI.See(Admin.EditFlexiPage.Newsletter.BackgroundColorValidation);\nI.Click(Admin.EditFlexiPage.Newsletter.BackgroundImageToggleButton);\nI.Click(Admin.EditFlexiPage.SaveButton);\nI.See(Admin.EditFlexiPage.Newsletter.BackgroundImageValidation);",
+              "err": {},
+              "uuid": "ef1f7462-83a7-4c3d-bafb-101432c3a4ee",
+              "parentUUID": "0e43bdef-eb6e-4fc3-bed4-c5fb78d32ec5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Newsletter_VerifyEmailValidation_OnFlexiPage",
+              "fullTitle": "NewsletterCB Newsletter_VerifyEmailValidation_OnFlexiPage",
+              "timedOut": null,
+              "duration": 56340,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "(0, _newsletterHelpers.I_AddNewsletterContentBlockToFlexiPage)();\nI.Click(Admin.EditFlexiPage.SaveButton);\nI.Wait(500);\nI.RefreshSiteCache();\nI.Open(\"FlexiPage\", TestData.Addons.Newsletter.FlexiPageUrl);\nI.Click(FlexiPage.NewsletterContentBlock.SubscribeButton);\nI.See(FlexiPage.NewsletterContentBlock.EmailValidator);",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttps://automation9352.azurewebsites.net/newsletter\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not '2xx'.\n\nIf you do not want status codes to cause failures pass the option: 'failOnStatusCode: false'",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttps://automation9352.azurewebsites.net/newsletter\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not '2xx'.\n\nIf you do not want status codes to cause failures pass the option: 'failOnStatusCode: false'\n    at Object.cypressErr (https://automation9352.azurewebsites.net/__cypress/runner/cypress_runner.js:106136:11)\n    at Object.throwErr (https://automation9352.azurewebsites.net/__cypress/runner/cypress_runner.js:106091:18)\n    at Object.throwErrByPath (https://automation9352.azurewebsites.net/__cypress/runner/cypress_runner.js:106123:17)\n    at https://automation9352.azurewebsites.net/__cypress/runner/cypress_runner.js:91460:31\n    at visitFailedByErr (https://automation9352.azurewebsites.net/__cypress/runner/cypress_runner.js:90973:12)\n    at https://automation9352.azurewebsites.net/__cypress/runner/cypress_runner.js:91441:22\n    at tryCatcher (https://automation9352.azurewebsites.net/__cypress/runner/cypress_runner.js:140400:23)\n    at Promise._settlePromiseFromHandler (https://automation9352.azurewebsites.net/__cypress/runner/cypress_runner.js:138336:31)\n    at Promise._settlePromise (https://automation9352.azurewebsites.net/__cypress/runner/cypress_runner.js:138393:18)\n    at Promise._settlePromise0 (https://automation9352.azurewebsites.net/__cypress/runner/cypress_runner.js:138438:10)\n    at Promise._settlePromises (https://automation9352.azurewebsites.net/__cypress/runner/cypress_runner.js:138513:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://automation9352.azurewebsites.net/__cypress/runner/cypress_runner.js:135125:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://automation9352.azurewebsites.net/__cypress/runner/cypress_runner.js:135135:10)\n    at Async.drainQueues (https://automation9352.azurewebsites.net/__cypress/runner/cypress_runner.js:135009:14)",
+                "diff": null
+              },
+              "uuid": "32a2d280-4a8f-4e1b-88a8-2d393b6933a7",
+              "parentUUID": "0e43bdef-eb6e-4fc3-bed4-c5fb78d32ec5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "34d11898-b642-4a15-8799-64b41e6d2126",
+            "ef1f7462-83a7-4c3d-bafb-101432c3a4ee"
+          ],
+          "failures": [
+            "32a2d280-4a8f-4e1b-88a8-2d393b6933a7"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 161046,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
