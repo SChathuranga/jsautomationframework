@@ -28,6 +28,6 @@
   },
   "dependencies": {
     "cypress-match-screenshot": "^1.1.0",
-    "npm": "^6.13.4"
+    "npm": "^6.14.6"
   }
 }
